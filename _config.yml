@@ -32,10 +32,10 @@
 #   uri              : # URL
 #   email            : "none@example.org" 
 
-#   # Academic websites
+  # Academic websites
 #   academia         : # URL
 #   arxiv            : # URL - Update with the correct link to your profile
-#   googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.co.in/citations?hl=en&user=VH1wZJkAAAAJ"
 #   inspire-hep      : # URL
 #   impactstory      : # URL
 #   orcid            : "https://orcid.org/yourorcidurl"
@@ -360,24 +360,32 @@
 #   ignore:
 #     envs: development
 
-# Site Settings
-title: "Vaibhav Rathore"
-name: "Vaibhav Rathore"
-description: "MS Research Scholar at IIT Bombay"
-url: "https://Vaibhavrathore1999.github.io" 
-baseurl: "" # keep this empty
-
-# Author info
-author:
+  # Site Settings
+  title: "Vaibhav Rathore"
   name: "Vaibhav Rathore"
-  avatar: "/images/profile.png" # You will need to upload a photo named profile.png to the images folder later
-  bio: "MS by Research Scholar<br>C-MInDS, IIT Bombay"
-  location: "Mumbai, India"
-  email: "vaibhav.rathor.in@gmail.com"
-  googlescholar: # Add your Google Scholar link here if you have one
-  linkedin: "https://www.linkedin.com/in/vaibhav-rathore-ab696b188"
-  github: "https://github.com/Vaibhavrathore1999"
-  # bitbucket:
-  # stackoverflow:
-  # x: 
-  # facebook:
+  description: "MS Research Scholar at IIT Bombay"
+  url: "https://Vaibhavrathore1999.github.io" 
+  baseurl: "" 
+
+  # Author info
+  author:
+    name: "Vaibhav Rathore"
+    avatar: "/images/profile.png" # This looks for the image you uploaded in Step 2
+    bio: "MS by Research Scholar<br>C-MInDS, IIT Bombay"
+    location: "Mumbai, India"
+    email: "vaibhav.rathor.in@gmail.com"
+    linkedin: "https://www.linkedin.com/in/vaibhav-rathore-ab696b188"
+    github: "https://github.com/Vaibhavrathore1999"
+
+  # Defaults
+  defaults:
+    - scope:
+        path: "" 
+        type: "pages"
+      values:
+        layout: "single"
+        author_profile: true
+
+  # Navigation (This controls the top menu)
+  minimal_mistakes_skin: "default"
+  search: true
