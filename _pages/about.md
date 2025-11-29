@@ -8,7 +8,7 @@ redirect_from:
   - /about.html
 ---
 
-## 👋 Hi, I'm **Vaibhav Rathore**
+## About Me**
 
 I am an **MS by Research scholar at the Center for Machine Intelligence and Data Science (C-MInDS), IIT Bombay**, where I work on core problems in **Machine Learning**, **Computer Vision**, and **Generalizable Recognition Systems**.  
 
@@ -42,17 +42,32 @@ My work has been accepted at **top-tier A\* venues** like **CVPR 2025** and **Ne
 - Introduces **DG2CD-Net**, enabling models to adapt on the fly using episodic and synthetic domains.  
 - Works even when training and testing domains are drastically different.
 
+**🎯 Links:**  
+- 📝 **Paper:** [Paper Link](https://openaccess.thecvf.com/content/CVPR2025/papers/Rathore_When_Domain_Generalization_meets_Generalized_Category_Discovery_An_Adaptive_Task-Arithmetic_CVPR_2025_paper.pdf) 
+- 💻 **Code:** https://github.com/Shubh-Nil/D_GCD  
+- 🔗 **Project Page:** https://shubh-nil.github.io/DG-GCD/
+
 ### **HIDISC: A Hyperbolic Framework for Domain Generalization with GCD**  
 **NeurIPS 2025 (A\*)**  
 *Vaibhav Rathore, Divyam Gupta, Biplab Banerjee*  
 - Hyperbolic geometry–based DG-GCD model outperforming episodic baseline methods.  
 - Eliminates synthetic domain generation while improving generalization.
 
-### **FOCUS: Fine-Grained Recognition Meets Open-World Discovery**  
-*Under Review @ CVPR 2026*
+**🎯 Links:**  
+- 📝 **Paper:** [Paper Link](https://neurips.cc/virtual/2025/loc/san-diego/poster/119696)  
+- 💻 **Code:** https://github.com/Vaibhavrathore1999/HiDISC  
+- 🔗 **Project Page:** https://vaibhavrathore1999.github.io/HiDISC/
+
+<!-- ### **FOCUS: Fine-Grained Recognition Meets Open-World Discovery**  
+*Under Review @ CVPR 2026* -->
 
 ### **M3 Questioning: Multimodal, Multi-span Medical QA**  
 *Under Review @ ACM Health*
+
+**🎯 Links:**  
+- 📝 **Paper:** *Draft under review*  
+- 💻 **Code:** *TBD*  
+- 🔗 **Project Page:** *Coming soon*
 
 ---
 
