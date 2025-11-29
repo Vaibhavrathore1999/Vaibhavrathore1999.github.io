@@ -1,8 +1,11 @@
 ---
 layout: single
-title: "About Me"
+title: "🙋‍♂️ Hello there, I'm Vaibhav!"
 permalink: /
 author_profile: true
+redirect_from: 
+  - /about/
+  - /about.html
 ---
 
 ## 👋 Hi, I'm **Vaibhav Rathore**

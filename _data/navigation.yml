@@ -1,12 +1,24 @@
-main:
-  - title: "About"
-    url: /pages/about/
-    
+
+# main:
+  - title: "Courses"
+    url: /courses/
+
   - title: "Publications"
     url: /publications/
+  # - title: "Talks"
+  #   url: /talks/    
+
+  - title: "Research and Projects"
+    url: /research_projects/    
     
-  - title: "Projects"
-    url: /projects/
+  # - title: "Portfolio"
+  #   url: /portfolio/
+        
+  - title: "Blog Posts"
+    url: /year-archive/
     
   - title: "CV"
     url: /files/Resume.pdf
+    
+  # - title: "Guide"
+  #   url: /markdown/
