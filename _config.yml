@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Vaibhav Rathore"
 title_separator          : "-"
 name                     : &name "Vaibhav Rathore"
-description              : &description "MS Student"
+description              : &description "Senior AI Data Scientist at MOFSL | Ph.D. Scholar at CSRE, IIT Bombay | Ex-C-MInDS M.S."
 url                      : https://Vaibhavrathore1999.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Vaibhavrathore1999/Vaibhavrathore1999.github.io"
@@ -24,11 +24,11 @@ author:
   avatar           : "profile.png"
   name             : "Vaibhav Rathore(वैभव राठौर)"
   pronouns         : "he/him"  
-  bio              : "I am a Master's student specializing in Artificial Intelligence and Data Science at IIT Bombay"
+  bio              : "Senior AI Data Scientist at MOFSL | Ph.D. Scholar at CSRE, IIT Bombay | Ex-C-MInDS M.S."
   location         : "Mumbai, India"
-  employer         : "IIT Bombay, India"
+  employer         : "MOFSL & IIT Bombay"
   uri              : # URL
-  email            : "vaibhav.rathore@iitb.ac.in" 
+  email            : "vaibhav.rathor.in@gmail.com"
 
   # Academic websites
   openreview       : "https://openreview.net/profile?id=%7EVaibhav_Rathore1"
@@ -60,7 +60,7 @@ author:
   instagram        : "vaibhav_rathore__"
   lastfm           : # Username
   mastodon         : # URL
-  medium           : # URL
+  medium           : "https://medium.com/@vaibhav.rathor.in"
   pinterest        : # Username
   soundcloud       : # Username
   steam            : # Username

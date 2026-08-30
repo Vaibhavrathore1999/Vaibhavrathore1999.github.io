@@ -1,152 +1,201 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Vaibhav Rathore",
+    "email": "vaibhav.rathor.in@gmail.com",
+    "website": "https://vaibhavrathore1999.github.io",
+    "summary": "Senior AI Data Scientist at MOFSL and Ph.D. Scholar at CSRE, IIT Bombay; M.S. by Research alumnus of C-MInDS, IIT Bombay.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
-      "countryCode": "US",
-      "region": ""
+      "city": "Mumbai",
+      "countryCode": "IN"
     },
     "profiles": [
       {
         "network": "Google Scholar",
-        "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.co.in/citations?hl=en&user=VH1wZJkAAAAJ"
       },
       {
         "network": "ORCID",
-        "username": "",
-        "url": "https://orcid.org/yourorcidurl"
+        "url": "https://orcid.org/0009-0007-0603-4462"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "Vaibhavrathore1999",
+        "url": "https://github.com/Vaibhavrathore1999"
+      },
+      {
+        "network": "LinkedIn",
+        "url": "https://www.linkedin.com/in/vaibhav-rathore-ab696b188/"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "Motilal Oswal Financial Services Ltd. (MOFSL)",
+      "position": "Senior AI Data Scientist",
+      "startDate": "2025-11",
+      "endDate": "Present",
+      "summary": "AI Research Team; time-series and tabular foundation models for financial data, India-focused AI, Indic TTS/ASR tokenization, lip-sync systems, and research for top-tier venues. Public details are intentionally high-level because the work is proprietary."
+    },
+    {
+      "company": "Motilal Oswal Financial Services Ltd. (MOFSL)",
+      "position": "Research Intern",
+      "startDate": "2025-09",
+      "endDate": "2025-10",
+      "summary": "Evaluated lip-sync and Gaussian-Splatting approaches for synchronization and 3D avatars."
+    },
+    {
+      "company": "Sony Research India",
+      "position": "Research Intern",
+      "startDate": "2025-05",
+      "endDate": "2025-07",
+      "summary": "3D lip synchronization using Gaussian Splatting and controllable 3D avatars."
+    },
+    {
+      "company": "Vehant Technologies",
+      "position": "Research Intern, Vehant Fellow Track",
+      "startDate": "2025-09",
+      "endDate": "2025-11",
+      "summary": "Pedestrian Attribute Recognition using hyperbolic, graph-based, correlation-aware, and vision-language methods."
+    },
+    {
+      "company": "Clinical AI Assistance",
+      "position": "Research & Development Intern",
+      "startDate": "2024-05",
+      "endDate": "2024-07",
+      "summary": "LoRA fine-tuning and multimodal medical question answering."
+    },
+    {
+      "company": "Reliance Industries Ltd.",
+      "position": "Graduate Engineer Trainee",
+      "startDate": "2022-08",
+      "endDate": "2023-07",
+      "summary": "Predictive maintenance and operational analytics."
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2018",
-      "gpa": null,
+      "institution": "IIT Bombay",
+      "area": "Centre of Studies in Resources Engineering (CSRE)",
+      "studyType": "Ph.D.",
+      "startDate": "2026",
+      "endDate": "Present",
+      "gpa": "9.00",
+      "courses": [
+        "Optimization in Machine Learning",
+        "Principles of Satellite Image Processing",
+        "Seminar"
+      ]
+    },
+    {
+      "institution": "C-MInDS, IIT Bombay",
+      "area": "Artificial Intelligence and Data Science",
+      "studyType": "M.S. by Research",
+      "startDate": "2023",
+      "endDate": "2025",
+      "gpa": "9.31",
+      "courses": [
+        "Foundations of Machine Learning",
+        "Advanced Topics in Deep Learning",
+        "Medical Image Computing",
+        "Algorithms and Complexity",
+        "Machine Learning for Remote Sensing II",
+        "Statistical Signal Analysis",
+        "Image Processing",
+        "Optimisation"
+      ]
+    },
+    {
+      "institution": "MNNIT Allahabad",
+      "area": "Mechanical Engineering",
+      "studyType": "B.Tech.",
+      "startDate": "2018",
+      "endDate": "2022",
+      "gpa": "9.10",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
+      "institution": "De Paul School",
+      "area": "Science (PCM) and Languages",
+      "studyType": "ISC",
+      "startDate": "2015",
+      "endDate": "2017",
+      "gpa": "98.00%",
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
-      "studyType": "",
-      "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "institution": "De Paul School",
+      "area": "Science (PCM) and Languages",
+      "studyType": "ICSE",
+      "startDate": "2013",
+      "endDate": "2015",
+      "gpa": "93.80%",
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
-  "interests": [],
-  "references": [],
+  "awards": [
+    {
+      "title": "Award for Excellence in Research",
+      "date": "2026-08-22",
+      "awarder": "C-MInDS, IIT Bombay",
+      "summary": "Awarded for M.S. by Research excellence."
+    }
+  ],
   "publications": [
     {
-      "name": "Paper Title Number 1",
-      "publisher": "Journal 1",
-      "releaseDate": "2009-10-01",
-      "website": "https://academicpages.github.io/files/paper1.pdf",
-      "summary": "This paper is about the number 1. The number 2 is left for future work."
+      "name": "SuTRA: Structurally-Unified Tokenization with Root Awareness",
+      "publisher": "Interspeech 2026",
+      "releaseDate": "2026",
+      "website": "https://arxiv.org/abs/2608.18087",
+      "summary": "Accepted. Code: https://github.com/MO-AI-Research/SUTRA; project: https://mo-vaibhavr-43300.github.io/SuTRA/."
     },
     {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "https://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
+      "name": "M³ QuestionIng: Multi-modal Multi-span Medical Question Answering",
+      "publisher": "ACM Transactions on Computing for Healthcare",
+      "releaseDate": "2026",
+      "website": "https://dl.acm.org/doi/10.1145/3820162",
+      "summary": "Accepted; code and dataset at https://github.com/anisha0325/M3QA."
     },
     {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
+      "name": "HiDISC: A Hyperbolic Framework for Domain Generalization with Generalized Category Discovery",
+      "publisher": "NeurIPS 2025",
+      "releaseDate": "2025",
+      "website": "https://arxiv.org/abs/2510.17188"
     },
     {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "https://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
+      "name": "When Domain Generalization Meets Generalized Category Discovery: An Adaptive Task-Arithmetic Driven Approach",
+      "publisher": "CVPR 2025",
+      "releaseDate": "2025",
+      "website": "https://openaccess.thecvf.com/content/CVPR2025/html/Rathore_When_Domain_Generalization_meets_Generalized_Category_Discovery_An_Adaptive_Task-Arithmetic_CVPR_2025_paper.html"
+    },
+    {
+      "name": "FOCUS: Bridging Fine-Grained Recognition and Open-World Discovery across Domains",
+      "publisher": "Under Review at WACV 2027",
+      "releaseDate": "2026",
+      "website": "https://arxiv.org/abs/2603.14240"
     }
   ],
-  "presentations": [
+  "skills": [
     {
-      "name": "Talk 1 on Relevant Topic in Your Field",
-      "event": "UC San Francisco, Department of Testing",
-      "date": "2012-03-01",
-      "location": "San Francisco, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Tutorial 1 on Relevant Topic in Your Field",
-      "event": "UC-Berkeley Institute for Testing Science",
-      "date": "2013-03-01",
-      "location": "Berkeley, CA, USA",
-      "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
+      "name": "AI and Machine Learning",
+      "keywords": ["Python", "PyTorch", "Computer Vision", "Indic NLP", "Gaussian Splatting", "Financial Time Series"]
     }
   ],
+  "languages": [],
+  "interests": [
+    {
+      "name": "Research",
+      "keywords": ["Domain Generalization", "Generalized Category Discovery", "Fine-Grained Recognition", "Open-World Learning", "Representation Learning"]
+    }
+  ],
+  "references": [],
+  "presentations": [],
   "teaching": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
-    },
-    {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
+      "course": "DS 303: Introduction to Machine Learning; e-PGD: Introduction to Python Programming",
+      "institution": "IIT Bombay",
+      "role": "Teaching Assistant",
+      "date": "2024–Present"
     }
   ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
-    }
-  ]
+  "portfolio": []
 }

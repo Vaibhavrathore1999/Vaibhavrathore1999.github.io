@@ -12,7 +12,7 @@ main:
 
 
   - title: "Research and Projects"
-    url: /research_projects/    
+    url: /projects/
     
   # - title: "Portfolio"
   #   url: /portfolio/
@@ -22,7 +22,7 @@ main:
 
 
   - title: "CV"
-    url: /files/Resume.pdf
+    url: /cv/
     
   # - title: "Guide"
   #   url: /markdown/
