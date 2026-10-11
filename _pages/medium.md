@@ -2,10 +2,10 @@
 layout: archive
 title: "Writing"
 permalink: /medium/
-author_profile: true
+author_profile: false
 ---
 
-I write accessible articles about machine learning, computer vision, mathematics, and the transition from core engineering to AI.
+<p class="intro intro--small">I write accessible articles about machine learning, computer vision, mathematics, and the transition from core engineering to AI.</p>
 
 **[Follow me on Medium](https://medium.com/@vaibhav.rathor.in)**
 

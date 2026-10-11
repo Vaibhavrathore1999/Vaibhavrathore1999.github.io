@@ -1,28 +1,12 @@
 main:
-  - title: "Courses"
-    url: /courses/
+  - title: "Research"
+    url: /projects/
 
   - title: "Publications"
     url: /publications/
-  # - title: "Talks"
-  #   url: /talks/    
-  
-  - title: "Medium"
+
+  - title: "Writing"
     url: /medium/
-
-
-  - title: "Research and Projects"
-    url: /projects/
-    
-  # - title: "Portfolio"
-  #   url: /portfolio/
-        
-  # - title: "Blog Posts"
-  #   url: /year-archive/
-
 
   - title: "CV"
     url: /cv/
-    
-  # - title: "Guide"
-  #   url: /markdown/

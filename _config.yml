@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Vaibhav Rathore"
 title_separator          : "-"
 name                     : &name "Vaibhav Rathore"
-description              : &description "Senior AI Data Scientist at MOFSL | Ph.D. Scholar at CSRE, IIT Bombay | Ex-C-MInDS M.S."
+description              : &description "AI researcher working on domain generalization, open-world recognition, and applied machine learning."
 url                      : https://Vaibhavrathore1999.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "Vaibhavrathore1999/Vaibhavrathore1999.github.io"
@@ -22,9 +22,9 @@ repository               : "Vaibhavrathore1999/Vaibhavrathore1999.github.io"
 author:
   # Biographic information
   avatar           : "profile.png"
-  name             : "Vaibhav Rathore(वैभव राठौर)"
+  name             : "Vaibhav Rathore"
   pronouns         : "he/him"  
-  bio              : "Senior AI Data Scientist at MOFSL | Ph.D. Scholar at CSRE, IIT Bombay | Ex-C-MInDS M.S."
+  bio              : "AI researcher and engineer working on learning systems that generalize."
   location         : "Mumbai, India"
   employer         : "MOFSL & IIT Bombay"
   uri              : # URL
@@ -109,7 +109,7 @@ staticman:
       options:
         format           : "iso8601" # "iso8601" (default), "timestamp-seconds", "timestamp-milliseconds"
 atom_feed:
-  hide                   : false     # change to true to hide the RSS feed in the footer
+  hide                   : true      # change to true to hide the RSS feed in the footer
   path                   : # blank (default) uses feed.xml
 
 
@@ -223,44 +223,44 @@ defaults:
       type: posts
     values:
       layout: single
-      author_profile: true
+      author_profile: false
       read_time: true
-      comments: true
-      share: true
-      related: true
+      comments: false
+      share: false
+      related: false
   # _pages
   - scope:
       path: ""
       type: pages
     values:
       layout: single
-      author_profile: true
+      author_profile: false
   # _teaching
   - scope:
       path: ""
       type: teaching
     values:
       layout: single
-      author_profile: true
-      share: true
-      comments: true
+      author_profile: false
+      share: false
+      comments: false
   # _publications
   - scope:
       path: ""
       type: publications
     values:
       layout: single
-      author_profile: true
-      share: true
-      comments: true
+      author_profile: false
+      share: false
+      comments: false
   # _portfolio
   - scope:
       path: ""
       type: portfolio
     values:
       layout: single
-      author_profile: true
-      share: true
+      author_profile: false
+      share: false
       comment: true
   # _talks
   - scope:
@@ -268,8 +268,8 @@ defaults:
       type: talks
     values:
       layout: talk
-      author_profile: true
-      share: true
+      author_profile: false
+      share: false
 
 
 # Sass/SCSS

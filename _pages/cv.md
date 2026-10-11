@@ -2,7 +2,7 @@
 layout: archive
 title: "CV"
 permalink: /cv/
-author_profile: true
+author_profile: false
 redirect_from:
   - /resume
 ---
@@ -44,16 +44,17 @@ Project details and results remain high-level because MOFSL work is proprietary.
 
 **Completed ML/DL coursework:** Foundations of Machine Learning; Advanced Topics in Deep Learning; Medical Image Computing; Algorithms and Complexity; Machine Learning for Remote Sensing II; Statistical Signal Analysis; Image Processing; Optimisation.
 
-## Selected Publications
+## Publications
 
-- **SuTRA: Structurally-Unified Tokenization with Root Awareness.** Interspeech 2026. [Paper](https://arxiv.org/pdf/2608.18087) · [Code](https://github.com/MO-AI-Research/SUTRA) · [Project](https://mo-vaibhavr-43300.github.io/SuTRA/)
-- **M³ QuestionIng: Multi-modal Multi-span Medical Question Answering.** ACM Transactions on Computing for Healthcare. [Paper](https://dl.acm.org/doi/10.1145/3820162) · [Code](https://github.com/anisha0325/M3QA)
-- **HiDISC: A Hyperbolic Framework for Domain Generalization with Generalized Category Discovery.** NeurIPS 2025. [Paper](https://arxiv.org/pdf/2510.17188) · [Code](https://github.com/dgibn/HIDISC) · [Project](https://vaibhavrathore1999.github.io/HiDISC/) · [Slides](https://nips.cc/media/neurips-2025/Slides/119696_PMfZaZk.pdf) · [Poster](https://nips.cc/virtual/2025/loc/san-diego/poster/119696)
-- **When Domain Generalization Meets Generalized Category Discovery.** CVPR 2025. [Paper](https://openaccess.thecvf.com/content/CVPR2025/papers/Rathore_When_Domain_Generalization_meets_Generalized_Category_Discovery_An_Adaptive_Task-Arithmetic_CVPR_2025_paper.pdf) · [Code](https://github.com/Shubh-Nil/D-GCD) · [Project](https://shubh-nil.github.io/DG-GCD/) · [Presentation](https://cvpr.thecvf.com/media/cvpr-2025/Slides/34579_xm7Nebz.pdf) · [Poster](https://shubh-nil.github.io/DG-GCD/poster.html)
+{% for work in site.data.research.published %}
+- **{{ work.title }}.** {{ work.venue }}. {% for link in work.links %}[{{ link.label }}]({{ link.url }}){% unless forloop.last %} · {% endunless %}{% endfor %}
+{% endfor %}
 
-### Under Review
+### Ongoing Research
 
-- **FOCUS: Bridging Fine-Grained Recognition and Open-World Discovery across Domains.** WACV 2027. [Preprint](https://arxiv.org/abs/2603.14240)
+{% for work in site.data.research.ongoing %}
+- **{{ work.title }}.** {{ work.summary }}
+{% endfor %}
 
 ## Awards & Honors
 
@@ -69,6 +70,10 @@ Teaching Assistant, IIT Bombay:
 - **DS 303: Introduction to Machine Learning** — Jul 2024–Present
 
 Student Mentor, MNNIT Allahabad — Jul 2021–May 2022. Mentored more than 20 first-year students and acted as a liaison between students and faculty.
+
+## Professional Service
+
+Reviewer or program committee member for AAAI, AISTATS, ICVGIP, the NeurIPS Position Paper Track, and the International Journal of Computer Vision.
 
 ## Skills
 

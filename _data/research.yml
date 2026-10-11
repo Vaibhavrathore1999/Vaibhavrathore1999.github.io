@@ -1,0 +1,82 @@
+published:
+  - title: "SuTRA: Structurally-Unified Tokenization with Root Awareness"
+    authors: "Vaibhav Rathore, Siddhant Gole, Dadhichi Telwadkar, Rooshil Bhatia, Maulik Ruparel, Siddharth Surekha, Neha Bhargava"
+    venue: "Interspeech 2026"
+    status: "Accepted"
+    summary: "A morphology-aware tokenizer that preserves Indic akshara structure and reduces morphological shattering across Hindi, Marathi, and Gujarati."
+    links:
+      - label: "Paper"
+        url: "https://arxiv.org/pdf/2608.18087"
+      - label: "Code"
+        url: "https://github.com/MO-AI-Research/SUTRA"
+      - label: "Project"
+        url: "https://mo-vaibhavr-43300.github.io/SuTRA/"
+
+  - title: "M³ QuestionIng: Multi-modal Multi-span Medical Question Answering"
+    authors: "Anisha Saha, Vaibhav Rathore, Abhisek Tiwari, Akash Ghosh, Sai Ruthvik Edara, Sriparna Saha"
+    venue: "ACM Transactions on Computing for Healthcare"
+    status: "Published"
+    summary: "Introduces M³QAFrame and a medical question-answering dataset whose answers draw jointly from multiple textual and visual spans."
+    links:
+      - label: "Paper"
+        url: "https://dl.acm.org/doi/10.1145/3820162"
+      - label: "Code & Dataset"
+        url: "https://github.com/anisha0325/M3QA"
+
+  - title: "HiDISC: A Hyperbolic Framework for Domain Generalization with Generalized Category Discovery"
+    authors: "Vaibhav Rathore, Divyam Gupta, Biplab Banerjee"
+    venue: "NeurIPS 2025"
+    status: "Published"
+    summary: "A hyperbolic framework for cross-domain alignment and novel-category discovery without expensive episodic simulation."
+    links:
+      - label: "Paper"
+        url: "https://arxiv.org/pdf/2510.17188"
+      - label: "Code"
+        url: "https://github.com/dgibn/HIDISC"
+      - label: "Project"
+        url: "https://vaibhavrathore1999.github.io/HiDISC/"
+      - label: "Slides"
+        url: "https://nips.cc/media/neurips-2025/Slides/119696_PMfZaZk.pdf"
+      - label: "Poster"
+        url: "https://nips.cc/virtual/2025/loc/san-diego/poster/119696"
+
+  - title: "When Domain Generalization Meets Generalized Category Discovery"
+    authors: "Vaibhav Rathore, Shubhranil B, Saikat Dutta, Sarthak Mehrotra, Zsolt Kira, Biplab Banerjee"
+    venue: "CVPR 2025"
+    status: "Published"
+    summary: "Introduces DG²CD-Net and the DG-GCD setting, combining episodic adaptation with adaptive task arithmetic."
+    links:
+      - label: "Paper"
+        url: "https://openaccess.thecvf.com/content/CVPR2025/papers/Rathore_When_Domain_Generalization_meets_Generalized_Category_Discovery_An_Adaptive_Task-Arithmetic_CVPR_2025_paper.pdf"
+      - label: "Code"
+        url: "https://github.com/Shubh-Nil/D-GCD"
+      - label: "Project"
+        url: "https://shubh-nil.github.io/DG-GCD/"
+      - label: "Presentation"
+        url: "https://cvpr.thecvf.com/media/cvpr-2025/Slides/34579_xm7Nebz.pdf"
+      - label: "Poster"
+        url: "https://shubh-nil.github.io/DG-GCD/poster.html"
+
+  - title: "Towards Unconstrained Pedestrian Attribute Recognition: Evaluating Domain Shift and Open-World Constraints"
+    authors: "Dattaraj Salunkhe, Vaibhav Rathore, Biplab Banerjee"
+    venue: "NewInML Workshop at NeurIPS 2026"
+    status: "Poster"
+    summary: "Studies pedestrian attribute recognition under domain shift and open-world constraints."
+    links: []
+
+ongoing:
+  - title: "NOMAD: Federated Generalized Category Discovery Across Unseen Domains"
+    authors: "Vaibhav Rathore, Divyam Gupta, Mainak Singha, Neha Bhargava, Subhasis Chaudhuri, Elisa Ricci, Biplab Banerjee"
+    summary: "Studies known- and novel-category discovery in unseen domains when source data remains decentralized and non-IID."
+
+  - title: "FoCUS: Bridging Fine-Grained Recognition and Open-World Discovery across Domains"
+    authors: "Vaibhav Rathore, Divyam Gupta, Moloud Abdar, Subhasis Chaudhuri, Biplab Banerjee"
+    summary: "Connects fine-grained recognition with open-world discovery under cross-domain distribution shifts."
+
+  - title: "HElIOS: Hyperbolic Generalized Category Discovery for Remote Sensing"
+    authors: "Sadia Hussain, Vaibhav Rathore, Divyam Gupta, Saurabh Prasad, Aleksandra Pizurica, Biplab Banerjee"
+    summary: "Explores hyperbolic representations for discovering known and novel categories in remote-sensing imagery."
+
+  - title: "Hyperbolic Geometry for Remote Sensing: From Hierarchical Scene Embeddings to Open-World Earth Observation"
+    authors: "Vaibhav Rathore and collaborators"
+    summary: "Develops a unified perspective on hyperbolic learning for hierarchical and open-world Earth observation."

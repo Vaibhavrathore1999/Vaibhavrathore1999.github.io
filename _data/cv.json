@@ -168,10 +168,30 @@
       "website": "https://openaccess.thecvf.com/content/CVPR2025/html/Rathore_When_Domain_Generalization_meets_Generalized_Category_Discovery_An_Adaptive_Task-Arithmetic_CVPR_2025_paper.html"
     },
     {
-      "name": "FOCUS: Bridging Fine-Grained Recognition and Open-World Discovery across Domains",
-      "publisher": "Under Review at WACV 2027",
+      "name": "FoCUS: Bridging Fine-Grained Recognition and Open-World Discovery across Domains",
+      "publisher": "Ongoing Research",
+      "summary": "Connects fine-grained recognition with open-world discovery under cross-domain distribution shifts."
+    },
+    {
+      "name": "Towards Unconstrained Pedestrian Attribute Recognition: Evaluating Domain Shift and Open-World Constraints",
+      "publisher": "NewInML Workshop at NeurIPS 2026",
       "releaseDate": "2026",
-      "website": "https://arxiv.org/abs/2603.14240"
+      "summary": "Poster on pedestrian attribute recognition under domain shift and open-world constraints."
+    },
+    {
+      "name": "NOMAD: Federated Generalized Category Discovery Across Unseen Domains",
+      "publisher": "Ongoing Research",
+      "summary": "Known- and novel-category discovery in unseen domains with decentralized, non-IID source data."
+    },
+    {
+      "name": "HElIOS: Hyperbolic Generalized Category Discovery for Remote Sensing",
+      "publisher": "Ongoing Research",
+      "summary": "Hyperbolic representations for discovering known and novel categories in remote-sensing imagery."
+    },
+    {
+      "name": "Hyperbolic Geometry for Remote Sensing: From Hierarchical Scene Embeddings to Open-World Earth Observation",
+      "publisher": "Ongoing Research",
+      "summary": "A unified perspective on hyperbolic learning for hierarchical and open-world Earth observation."
     }
   ],
   "skills": [
