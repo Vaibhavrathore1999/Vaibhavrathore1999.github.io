@@ -8,13 +8,17 @@ redirect_from:
   - /about.html
 ---
 
-<p class="eyebrow">AI researcher & engineer · Mumbai, India</p>
-
-<p class="intro">I build learning systems that generalize beyond their training data—across domains, categories, languages, and real-world constraints.</p>
-
-I am a Senior AI Data Scientist at Motilal Oswal Financial Services and a Ph.D. Scholar at CSRE, IIT Bombay. My research sits at the intersection of domain generalization, open-world recognition, representation learning, and applied AI.
-
-<p class="text-links"><a href="mailto:vaibhav.rathor.in@gmail.com">Email</a> <a href="https://scholar.google.co.in/citations?hl=en&user=VH1wZJkAAAAJ">Google Scholar</a> <a href="https://github.com/Vaibhavrathore1999">GitHub</a> <a href="https://www.linkedin.com/in/vaibhav-rathore-ab696b188/">LinkedIn</a></p>
+<div class="profile-intro">
+  <div class="profile-copy">
+    <p class="eyebrow">AI researcher &amp; engineer · Mumbai, India</p>
+    <p class="intro">I build learning systems that generalize beyond their training data—across domains, categories, languages, and real-world constraints.</p>
+    <p>I am a Senior AI Data Scientist at Motilal Oswal Financial Services and a Ph.D. Scholar at CSRE, IIT Bombay. My research sits at the intersection of domain generalization, open-world recognition, representation learning, and applied AI.</p>
+    <p class="text-links"><a href="mailto:vaibhav.rathor.in@gmail.com">Email</a> <a href="https://scholar.google.co.in/citations?hl=en&user=VH1wZJkAAAAJ">Google Scholar</a> <a href="https://github.com/Vaibhavrathore1999">GitHub</a> <a href="https://www.linkedin.com/in/vaibhav-rathore-ab696b188/">LinkedIn</a></p>
+  </div>
+  <figure class="profile-portrait">
+    <img src="{{ '/images/profile.png' | relative_url }}" alt="Vaibhav Rathore" fetchpriority="high">
+  </figure>
+</div>
 
 ## Selected work
 

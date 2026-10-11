@@ -137,6 +137,30 @@ body {
   text-transform: uppercase;
 }
 
+.profile-intro {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 210px;
+  gap: 2rem 3.5rem;
+  align-items: start;
+}
+
+.profile-copy {
+  min-width: 0;
+}
+
+.profile-portrait {
+  margin: 0;
+}
+
+.profile-portrait img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 5;
+  border-radius: 3px;
+  object-fit: cover;
+  object-position: 50% 28%;
+}
+
 .intro {
   max-width: 700px;
   margin-bottom: 2.25rem !important;
@@ -350,6 +374,14 @@ body {
   .page__title,
   .archive .page__title {
     margin-bottom: 1.5rem;
+  }
+
+  .profile-intro {
+    grid-template-columns: 1fr;
+  }
+
+  .profile-portrait {
+    width: min(62vw, 220px);
   }
 
   .page__content h2,
