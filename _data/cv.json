@@ -142,6 +142,12 @@
   ],
   "publications": [
     {
+      "name": "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve",
+      "publisher": "Multi-LLL Workshop at AACL-IJCNLP 2026",
+      "releaseDate": "2026",
+      "summary": "Accepted. Evaluates language-subspace interventions for multilingual mathematical reasoning and response-language fidelity."
+    },
+    {
       "name": "SuTRA: Structurally-Unified Tokenization with Root Awareness",
       "publisher": "Interspeech 2026",
       "releaseDate": "2026",

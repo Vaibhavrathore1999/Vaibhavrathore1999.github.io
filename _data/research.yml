@@ -1,4 +1,11 @@
 published:
+  - title: "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve"
+    authors: "Shaanil Punglia, Dadhichi Telwadkar, Vaibhav Rathore, Siddharth Sureka, Neha Bhargava"
+    venue: "Multi-LLL Workshop at AACL-IJCNLP 2026"
+    status: "Accepted"
+    summary: "Evaluates whether language-subspace interventions truly remove language information and improve multilingual mathematical reasoning without sacrificing response-language fidelity."
+    links: []
+
   - title: "SuTRA: Structurally-Unified Tokenization with Root Awareness"
     authors: "Vaibhav Rathore, Siddhant Gole, Dadhichi Telwadkar, Rooshil Bhatia, Maulik Ruparel, Siddharth Surekha, Neha Bhargava"
     venue: "Interspeech 2026"
