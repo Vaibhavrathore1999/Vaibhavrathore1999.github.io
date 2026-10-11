@@ -72,6 +72,26 @@ published:
     links: []
 
 ongoing:
+  - title: "Scalaris: A Scalable Enterprise Memory Architecture for Conversational AI Assistants"
+    authors: "Devarsh Gandhi, Sarthak Pawar, Hemprasad Yashwant Badgujar, Vaibhav Rathore, Siddharth Sureka"
+    summary: "Develops a unified long- and short-term memory architecture for accurate, token-efficient retrieval in enterprise conversational systems."
+
+  - title: "Zero-Shot or Fine-Tuned? Benchmarking Time-Series Foundation Models Across Indian and US Equity Markets"
+    authors: "Ritik, Vaibhav Rathore, Nachiketa Ratnakar Patil, Siddhant Gole, Siddharth Sureka, Neha Bhargava"
+    summary: "Benchmarks zero-shot, last-block, and full fine-tuning strategies for time-series foundation models across Indian and US equity data."
+
+  - title: "CandleDiff: Contextual Diffusion for Structurally Valid OHLC Generation"
+    authors: "Siddhant Gole, Nachiketa Ratnakar Patil, Vaibhav Rathore, Siddharth Sureka, Neha Bhargava"
+    summary: "Introduces contextual diffusion for controllable firm-level OHLC generation with guaranteed candle geometry and market-aware conditioning."
+
+  - title: "Align Before You Quantize: Making Leech Lattice Tokenization Work for Time Series"
+    authors: "Akanksh Adugani Vanjari, Vaibhav Rathore, Siddhant Gole, Siddharth Sureka, Neha Bhargava"
+    summary: "Uses hyperspherical alignment and phased training to improve lattice-codebook utilization and reconstruction for time-series tokenization."
+
+  - title: "Position: Many Agents, Few Minds — Model Concentration as a Governance Metric for Agent-Native Financial Markets"
+    authors: "Vaibhav Rathore, Siddhant Gole, Siddharth Sureka, Neha Bhargava"
+    summary: "Argues that agent-based finance can decentralize intermediation while concentrating decisions in shared foundation models, and proposes a metric for that risk."
+
   - title: "NOMAD: Federated Generalized Category Discovery Across Unseen Domains"
     authors: "Vaibhav Rathore, Divyam Gupta, Mainak Singha, Neha Bhargava, Subhasis Chaudhuri, Elisa Ricci, Biplab Banerjee"
     summary: "Studies known- and novel-category discovery in unseen domains when source data remains decentralized and non-IID."

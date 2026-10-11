@@ -34,13 +34,15 @@ I am a Senior AI Data Scientist at Motilal Oswal Financial Services and a Ph.D. 
 ## Ongoing research
 
 <div class="research-list compact">
-{% for work in site.data.research.ongoing %}
+{% for work in site.data.research.ongoing limit:4 %}
   <article class="research-item">
     <h3>{{ work.title }}</h3>
     <p>{{ work.summary }}</p>
   </article>
 {% endfor %}
 </div>
+
+<p class="section-link"><a href="{{ '/projects/' | relative_url }}">View all current research →</a></p>
 
 ## Current roles
 

@@ -185,6 +185,31 @@
       "summary": "Poster on pedestrian attribute recognition under domain shift and open-world constraints."
     },
     {
+      "name": "Scalaris: A Scalable Enterprise Memory Architecture for Conversational AI Assistants",
+      "publisher": "Ongoing Research",
+      "summary": "A unified long- and short-term memory architecture for accurate, token-efficient enterprise conversational systems."
+    },
+    {
+      "name": "Zero-Shot or Fine-Tuned? Benchmarking Time-Series Foundation Models Across Indian and US Equity Markets",
+      "publisher": "Ongoing Research",
+      "summary": "A benchmark of adaptation strategies for time-series foundation models across Indian and US equity data."
+    },
+    {
+      "name": "CandleDiff: Contextual Diffusion for Structurally Valid OHLC Generation",
+      "publisher": "Ongoing Research",
+      "summary": "Contextual diffusion for controllable firm-level OHLC generation with guaranteed candle geometry."
+    },
+    {
+      "name": "Align Before You Quantize: Making Leech Lattice Tokenization Work for Time Series",
+      "publisher": "Ongoing Research",
+      "summary": "Hyperspherical alignment and phased training for lattice-based time-series tokenization."
+    },
+    {
+      "name": "Position: Many Agents, Few Minds — Model Concentration as a Governance Metric for Agent-Native Financial Markets",
+      "publisher": "Ongoing Research",
+      "summary": "A model-concentration perspective on systemic risk in agent-native financial markets."
+    },
+    {
       "name": "NOMAD: Federated Generalized Category Discovery Across Unseen Domains",
       "publisher": "Ongoing Research",
       "summary": "Known- and novel-category discovery in unseen domains with decentralized, non-IID source data."
