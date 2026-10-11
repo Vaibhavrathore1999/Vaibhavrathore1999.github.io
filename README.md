@@ -6,7 +6,7 @@ The site presents my work in domain generalization, open-world recognition, repr
 
 ## Site sections
 
-- **Home** — selected work, current research, roles, and contact details
+- **Home** — selected work, current research, career journey, roles, and contact details
 - **Research** — research themes, ongoing work, and completed projects
 - **Publications** — published and accepted papers, followed by ongoing research
 - **Writing** — accessible articles about machine learning and computer vision
@@ -15,6 +15,8 @@ The site presents my work in domain generalization, open-world recognition, repr
 ## Updating research
 
 Publication and project metadata lives in [`_data/research.yml`](_data/research.yml). The homepage, Research page, Publications page, and web CV render from this shared source.
+
+Career, education, publication, and recognition milestones live in [`_data/timeline.yml`](_data/timeline.yml).
 
 Published or accepted work may include:
 
@@ -49,6 +51,7 @@ bundle exec jekyll build
 
 ```text
 _data/research.yml       Research and publication metadata
+_data/timeline.yml       Career and academic milestones
 _pages/                  Main site pages
 _posts/                  Long-form posts
 _sass/layout/_minimal.scss

@@ -221,21 +221,66 @@ body {
   font-size: 0.86rem !important;
 }
 
-.timeline-list > div {
-  display: grid;
-  grid-template-columns: 105px 1fr;
-  gap: 1.5rem;
-  padding: 1.1rem 0;
-  border-bottom: 1px solid var(--global-border-color);
+.journey-timeline {
+  position: relative;
+  margin-top: 2rem;
 }
 
-.timeline-list span {
+.journey-timeline::before {
+  position: absolute;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  left: 88px;
+  width: 1px;
+  background: var(--global-border-color);
+  content: "";
+}
+
+.journey-item {
+  position: relative;
+  display: grid;
+  grid-template-columns: 70px 1fr;
+  gap: 2.5rem;
+  padding: 0 0 2.75rem;
+}
+
+.journey-item::before {
+  position: absolute;
+  top: 0.42rem;
+  left: 84px;
+  width: 9px;
+  height: 9px;
+  border: 2px solid var(--global-bg-color);
+  border-radius: 50%;
+  background: var(--global-text-color);
+  content: "";
+}
+
+.journey-year {
   color: var(--global-text-color-light);
   font-size: 0.8rem;
+  font-variant-numeric: tabular-nums;
 }
 
-.timeline-list p {
-  margin: 0 !important;
+.journey-content {
+  max-width: 570px;
+}
+
+.journey-content p {
+  margin: 0.55rem 0 0 !important;
+}
+
+.journey-content .journey-type {
+  margin: 0 0 0.45rem !important;
+  color: var(--global-text-color-light);
+  font-size: 0.7rem !important;
+  font-weight: 650;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.journey-content .journey-link {
+  font-size: 0.8rem !important;
 }
 
 .theme-grid {
@@ -312,8 +357,7 @@ body {
     margin-top: 4rem;
   }
 
-  .research-list.compact .research-item,
-  .timeline-list > div {
+  .research-list.compact .research-item {
     grid-template-columns: 1fr;
     gap: 0.65rem;
   }
@@ -333,6 +377,19 @@ body {
 
   .theme-grid span {
     margin-bottom: 1.5rem;
+  }
+
+  .journey-timeline::before {
+    left: 61px;
+  }
+
+  .journey-item {
+    grid-template-columns: 48px 1fr;
+    gap: 1.75rem;
+  }
+
+  .journey-item::before {
+    left: 57px;
   }
 
   .minimal-footer {

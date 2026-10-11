@@ -44,12 +44,22 @@ I am a Senior AI Data Scientist at Motilal Oswal Financial Services and a Ph.D. 
 
 <p class="section-link"><a href="{{ '/projects/' | relative_url }}">View all current research →</a></p>
 
-## Current roles
+## Journey
 
-<div class="timeline-list">
-  <div><span>2025—Now</span><p><strong>Senior AI Data Scientist</strong><br>Motilal Oswal Financial Services</p></div>
-  <div><span>2026—Now</span><p><strong>Ph.D. Scholar</strong><br>CSRE, IIT Bombay</p></div>
-  <div><span>2023—2025</span><p><strong>M.S. by Research</strong><br>AI & Data Science, C-MInDS, IIT Bombay</p></div>
+<p class="section-note">Selected milestones across research, education, and industry.</p>
+
+<div class="journey-timeline">
+{% for milestone in site.data.timeline %}
+  <article class="journey-item">
+    <div class="journey-year">{{ milestone.year }}</div>
+    <div class="journey-content">
+      <p class="journey-type">{{ milestone.type }}</p>
+      <h3>{{ milestone.title }}</h3>
+      <p>{{ milestone.summary }}</p>
+      {% if milestone.link %}<p class="journey-link"><a href="{{ milestone.link | relative_url }}">{{ milestone.link_label }} →</a></p>{% endif %}
+    </div>
+  </article>
+{% endfor %}
 </div>
 
 ## Professional service

@@ -1,0 +1,53 @@
+- year: "2026"
+  type: "Education"
+  title: "Began Ph.D. at IIT Bombay"
+  summary: "Joined CSRE, IIT Bombay as a Ph.D. Scholar, extending my work on generalizable and open-world learning."
+
+- year: "2026"
+  type: "Recognition"
+  title: "Award for Excellence in Research"
+  summary: "Recognized by C-MInDS, IIT Bombay for research completed during the M.S. by Research program."
+
+- year: "2026"
+  type: "Research"
+  title: "Expanded into language, multimodal, and financial AI"
+  summary: "Published or presented work on Indic tokenization, multilingual interpretability, medical question answering, and open-world pedestrian analysis."
+  link: "/publications/"
+  link_label: "View 2026 publications"
+
+- year: "2025"
+  type: "Research"
+  title: "DG-GCD research at CVPR and NeurIPS"
+  summary: "Introduced methods for domain-generalized category discovery through adaptive task arithmetic and hyperbolic representation learning."
+  link: "/publications/"
+  link_label: "View publications"
+
+- year: "2025"
+  type: "Education"
+  title: "Completed M.S. by Research"
+  summary: "Graduated from C-MInDS, IIT Bombay in AI and Data Science with a CPI of 9.31."
+
+- year: "2025"
+  type: "Career"
+  title: "Joined the AI Research team at MOFSL"
+  summary: "Moved from a research internship into a Senior AI Data Scientist role spanning applied and foundational AI."
+
+- year: "2024"
+  type: "Research"
+  title: "Started working on multimodal medical AI"
+  summary: "Worked on parameter-efficient language-model adaptation and question answering across text and medical imagery."
+
+- year: "2023"
+  type: "Education"
+  title: "Entered research at C-MInDS, IIT Bombay"
+  summary: "Began an M.S. by Research in AI and Data Science and shifted toward generalizable visual learning."
+
+- year: "2022"
+  type: "Education & Career"
+  title: "Graduated from MNNIT and joined Reliance"
+  summary: "Completed a B.Tech. in Mechanical Engineering with a CPI of 9.10, earned 97.84 and 96 percentiles in GATE, and began work in predictive analytics."
+
+- year: "2018"
+  type: "Academic milestone"
+  title: "Began engineering journey"
+  summary: "Placed in the top one percentile of JEE Main and entered MNNIT Allahabad."
