@@ -1,0 +1,6 @@
+<article class="journey-item">
+  <p class="eyebrow">{{ include.item.type }}</p>
+  <h3>{{ include.item.title }}</h3>
+  <p>{{ include.item.summary }}</p>
+  {% if include.item.link %}<a href="{{ include.item.link | relative_url }}">{{ include.item.link_label }} <span aria-hidden="true">↗</span></a>{% endif %}
+</article>

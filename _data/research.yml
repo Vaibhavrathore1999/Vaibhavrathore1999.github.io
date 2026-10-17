@@ -1,5 +1,9 @@
 published:
   - title: "HElIOS: Hyperbolic Generalized Category Discovery for Remote Sensing"
+    id: helios
+    group: main
+    topic: vision
+    affiliations: [IIT Bombay]
     authors: "Sadia Hussain, Vaibhav Rathore, Divyam Gupta, Saurabh Prasad, Aleksandra Pizurica, Biplab Banerjee"
     affiliation: "Vaibhav's affiliation: IIT Bombay"
     venue: "WACV 2027"
@@ -8,6 +12,11 @@ published:
     links: []
 
   - title: "Align Before You Quantize: Making Leech Lattice Tokenization Work for Time Series"
+    id: halo
+    group: workshop
+    topic: finance
+    affiliations: [MOFSL]
+    note: Non-archival workshop
     authors: "Akanksh Adugani Vanjari, Vaibhav Rathore, Siddhant Gole, Siddharth Sureka, Neha Bhargava"
     affiliation: "Vaibhav's affiliation: Motilal Oswal Financial Services"
     venue: "AI4F Workshop at ACM ICAIF 2026"
@@ -16,6 +25,11 @@ published:
     links: []
 
   - title: "CandleDiff: Contextual Diffusion for Structurally Valid OHLC Generation"
+    id: candlediff
+    group: workshop
+    topic: finance
+    affiliations: [MOFSL]
+    note: Non-archival workshop
     authors: "Siddhant Gole, Nachiketa Ratnakar Patil, Vaibhav Rathore, Siddharth Sureka, Neha Bhargava"
     affiliation: "Vaibhav's affiliation: Motilal Oswal Financial Services"
     venue: "AI4F Workshop at ACM ICAIF 2026"
@@ -24,6 +38,11 @@ published:
     links: []
 
   - title: "Position: Many Agents, Few Minds — Model Concentration as a Governance Metric for Agent-Native Financial Markets"
+    id: many-agents
+    group: workshop
+    topic: finance
+    affiliations: [MOFSL]
+    note: Non-archival workshop
     authors: "Vaibhav Rathore, Siddhant Gole, Siddharth Sureka, Neha Bhargava"
     affiliation: "Vaibhav's affiliation: Motilal Oswal Financial Services"
     venue: "AI4F Workshop at ACM ICAIF 2026"
@@ -32,6 +51,10 @@ published:
     links: []
 
   - title: "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve"
+    id: beyond-accuracy
+    group: workshop
+    topic: language
+    affiliations: [MOFSL, IIT Bombay]
     authors: "Shaanil Punglia, Dadhichi Telwadkar, Vaibhav Rathore, Siddharth Sureka, Neha Bhargava"
     venue: "Multi-LLL Workshop at AACL-IJCNLP 2026"
     status: "Accepted"
@@ -39,6 +62,9 @@ published:
     links: []
 
   - title: "SuTRA: Structurally-Unified Tokenization with Root Awareness"
+    id: sutra
+    group: main
+    topic: language
     authors: "Vaibhav Rathore, Siddhant Gole, Dadhichi Telwadkar, Rooshil Bhatia, Maulik Ruparel, Siddharth Surekha, Neha Bhargava"
     venue: "Interspeech 2026"
     status: "Accepted"
@@ -52,6 +78,9 @@ published:
         url: "https://mo-vaibhavr-43300.github.io/SuTRA/"
 
   - title: "M³ QuestionIng: Multi-modal Multi-span Medical Question Answering"
+    id: m3qa
+    group: main
+    topic: multimodal
     authors: "Anisha Saha, Vaibhav Rathore, Abhisek Tiwari, Akash Ghosh, Sai Ruthvik Edara, Sriparna Saha"
     venue: "ACM Transactions on Computing for Healthcare"
     status: "Published"
@@ -63,6 +92,9 @@ published:
         url: "https://github.com/anisha0325/M3QA"
 
   - title: "HiDISC: A Hyperbolic Framework for Domain Generalization with Generalized Category Discovery"
+    id: hidisc
+    group: main
+    topic: vision
     authors: "Vaibhav Rathore, Divyam Gupta, Biplab Banerjee"
     venue: "NeurIPS 2025"
     status: "Published"
@@ -79,7 +111,10 @@ published:
       - label: "Poster"
         url: "https://nips.cc/virtual/2025/loc/san-diego/poster/119696"
 
-  - title: "When Domain Generalization Meets Generalized Category Discovery"
+  - title: "When Domain Generalization Meets Generalized Category Discovery: An Adaptive Task-Arithmetic Driven Approach"
+    id: dg-gcd
+    group: main
+    topic: vision
     authors: "Vaibhav Rathore, Shubhranil B, Saikat Dutta, Sarthak Mehrotra, Zsolt Kira, Biplab Banerjee"
     venue: "CVPR 2025"
     status: "Published"
@@ -97,6 +132,9 @@ published:
         url: "https://shubh-nil.github.io/DG-GCD/poster.html"
 
   - title: "Towards Unconstrained Pedestrian Attribute Recognition: Evaluating Domain Shift and Open-World Constraints"
+    id: pedestrian
+    group: workshop
+    topic: vision
     authors: "Dattaraj Salunkhe, Vaibhav Rathore, Biplab Banerjee"
     venue: "NewInML Workshop at NeurIPS 2026"
     status: "Poster"

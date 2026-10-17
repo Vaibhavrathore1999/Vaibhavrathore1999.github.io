@@ -1,22 +1,14 @@
 ---
-layout: archive
+layout: portfolio
 title: "Writing"
 permalink: /medium/
-author_profile: false
+eyebrow: "Notes from the learning process"
+description: "Accessible explanations of machine learning, vision, and the mathematics underneath."
 ---
 
-<p class="intro intro--small">I write accessible articles about machine learning, computer vision, mathematics, and the transition from core engineering to AI.</p>
-
-**[Follow me on Medium](https://medium.com/@vaibhav.rathor.in)**
-
-## Recent Articles
-
-- **[The Blame Game: How Neural Networks Learn via Backpropagation](https://medium.com/@vaibhav.rathor.in/the-blame-game-how-neural-networks-learn-via-backpropagation-cdf1258992b2)** — how the chain rule assigns responsibility across millions of parameters.
-- **[The Machine That Learns from Mistakes: A Gentle Introduction to Perceptrons and Gradients](https://medium.com/@vaibhav.rathor.in/the-machine-that-learns-from-mistakes-a-gentle-introduction-to-perceptrons-and-gradients-245c0ab6a0f4)** — an intuitive introduction to learning, decision boundaries, and gradient descent.
-- **The Unfair Advantage: Why Core Engineering Is the Perfect Foundation for Modern Machine Learning** — translating an engineering background into strengths for AI research.
-- **[The Evolution of Audio-Driven Lip Synchronization](https://medium.com/@vaibhav.rathor.in/the-evolution-of-audio-driven-lip-synchronization-9d44736d7979)** — from adversarial networks to diffusion-based approaches.
-- **[From Linear Algebra to Deep Learning: A Unified Guide](https://medium.com/@vaibhav.rathor.in/from-linear-algebra-to-deep-learning-a-unified-guide-743546b95961)** — connecting mathematical foundations to modern neural networks.
-- **[A Gentle Dive into Vision Transformers](https://medium.com/@vaibhav.rathor.in/a-gentle-dive-into-vision-transformers-from-image-patches-to-deep-self-attention-a1d1391a9216)** — image patches, self-attention, and ViT fundamentals.
-- **[Can AI See What We Talk About? Exploring Visual Grounding with Attention](https://medium.com/@vaibhav.rathor.in/can-ai-see-what-we-talk-about-exploring-visual-grounding-with-attention-dfb012afb8a8)** — a discussion of accumulated attention for visual grounding.
-
-The full and most current archive is available on my **[Medium profile](https://medium.com/@vaibhav.rathor.in)**.
+<div data-filter-list="writing">
+  <form class="filter-bar" data-filters hidden><label>Explore a topic<select name="topic"><option value="">All topics</option><option value="foundations">Learning foundations</option><option value="mathematics">Mathematics</option><option value="vision">Computer vision</option></select></label><button type="reset" class="reset-button">Reset</button><p class="meta filter-count" aria-live="polite" role="status"></p></form>
+  {% for article in site.data.writing %}<article class="writing-row" data-filter-item data-topic="{{ article.topic }}"><p class="meta">{{ article.topic | capitalize }} · On Medium</p><h2><a href="{{ article.url }}">{{ article.title }} ↗</a></h2><p>{{ article.summary | capitalize }}</p></article>{% endfor %}
+  <p class="empty-state" hidden>No articles match this topic. Reset to browse all writing.</p>
+</div>
+<aside class="end-note"><h2>More notes, as I go</h2><p>Find the full archive and new articles on <a href="https://medium.com/@vaibhav.rathor.in">my Medium profile ↗</a>.</p></aside>

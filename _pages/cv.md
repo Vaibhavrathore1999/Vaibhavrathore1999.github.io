@@ -1,64 +1,28 @@
 ---
-layout: archive
-title: "CV"
+layout: portfolio
+title: "Curriculum vitae"
 permalink: /cv/
-author_profile: false
-redirect_from:
-  - /resume
+eyebrow: "Research & experience"
+description: "Academic inquiry and applied AI, in parallel."
+redirect_from: [/resume, /cv-json/]
 ---
 
-<p class="intro intro--small">AI researcher and engineer working on learning systems that generalize across domains, categories, languages, and real-world constraints.</p>
+{% assign cv = site.data.cv %}
+<div class="cv-toolbar"><a class="primary-link" href="{{ '/files/cv.pdf' | relative_url }}" download>Download CV <span class="meta">PDF ↓</span></a><p class="meta">Updated {{ cv.updated | date: '%d %b %Y' }}</p></div>
+<p>{{ cv.basics.summary }}</p>
+<div class="text-links">{% for profile in cv.basics.profiles %}<a href="{{ profile.url }}">{{ profile.network }}</a>{% endfor %}<a href="mailto:{{ cv.basics.email }}">Email</a></div>
+<nav class="section-nav" aria-label="CV sections"><a href="#experience">Experience</a><a href="#education">Education</a><a href="#recognition">Recognition</a><a href="#cv-publications">Publications</a><a href="#service">Service</a></nav>
 
-<p class="text-links"><a href="mailto:vaibhav.rathor.in@gmail.com">Email</a> <a href="https://scholar.google.co.in/citations?hl=en&user=VH1wZJkAAAAJ">Google Scholar</a> <a href="https://github.com/Vaibhavrathore1999">GitHub</a> <a href="https://www.linkedin.com/in/vaibhav-rathore-ab696b188/">LinkedIn</a> <a href="https://orcid.org/0009-0007-0603-4462">ORCID</a></p>
+<section id="experience"><div class="section-heading"><h2>Experience</h2></div><div class="cv-timeline">{% for job in cv.work %}<article><p class="meta cv-date">{{ job.startDate | append: '-01' | date: '%b %Y' }} — {% if job.endDate == 'Present' %}Present{% else %}{{ job.endDate | append: '-01' | date: '%b %Y' }}{% endif %}</p><div><h3>{{ job.position }}</h3><p class="cv-org">{{ job.company }}</p><p>{{ job.summary }}</p></div></article>{% endfor %}</div></section>
 
-## Experience
+<section id="education"><div class="section-heading"><h2>Education</h2></div><div class="cv-timeline">{% for item in cv.education limit:3 %}<article><p class="meta cv-date">{{ item.startDate }} — {{ item.endDate }}</p><div><h3>{{ item.studyType }} · {{ item.institution }}</h3><p>{{ item.area }}</p><p class="meta">CPI {{ item.gpa }}</p>{% if item.courses.size > 0 %}<details><summary>Selected coursework</summary><p>{{ item.courses | join: ' · ' }}</p></details>{% endif %}</div></article>{% endfor %}</div><details class="school-record"><summary>Earlier education</summary>{% for item in cv.education offset:3 %}<p>{{ item.studyType }} · {{ item.institution }} · {{ item.startDate }}–{{ item.endDate }} · {{ item.gpa }}</p>{% endfor %}</details></section>
 
-<div class="cv-timeline">
-  <article><div class="cv-date">2025—Now</div><div><h3>Senior AI Data Scientist</h3><p class="cv-org">Motilal Oswal Financial Services · AI Research</p><p>Applied and foundational AI for the Indian context, including financial time-series modeling, Indic language technology, and production ML systems. Public details remain high-level because the work is proprietary.</p></div></article>
-  <article><div class="cv-date">2025</div><div><h3>Research Intern</h3><p class="cv-org">Motilal Oswal Financial Services</p><p>Evaluated lip-sync and Gaussian Splatting approaches for high-fidelity synchronization and controllable 3D avatars.</p></div></article>
-  <article><div class="cv-date">2025</div><div><h3>Research Intern</h3><p class="cv-org">Sony Research India · Vehant Technologies</p><p>Worked on 3D lip synchronization, pedestrian attribute recognition, hyperbolic embeddings, attribute graphs, and domain shift.</p></div></article>
-  <article><div class="cv-date">2024</div><div><h3>Research &amp; Development Intern</h3><p class="cv-org">Clinical AI Assistance</p><p>Fine-tuned language models with LoRA and developed multimodal medical question answering systems.</p></div></article>
-  <article><div class="cv-date">2022—23</div><div><h3>Graduate Engineer Trainee</h3><p class="cv-org">Reliance Industries</p><p>Worked on predictive maintenance and operational analytics.</p></div></article>
-</div>
+<section id="recognition"><div class="section-heading"><h2>Recognition</h2></div>{% for award in cv.awards %}<article class="recognition"><p class="meta">{{ award.date | date: '%d %b %Y' }}</p><h3>{{ award.title }}</h3><p>{{ award.awarder }} · {{ award.summary }}</p></article>{% endfor %}{% for item in cv.achievements %}<p><strong>{{ item.title }}</strong> · {{ item.year }}<br>{{ item.summary }}</p>{% endfor %}</section>
 
-## Education
+<section id="cv-publications"><div class="section-heading"><h2>Publications &amp; accepted work</h2><a href="{{ '/publications/' | relative_url }}">Explore papers ↗</a></div>
+  <h3 class="subheading">Conferences &amp; journals</h3>{% assign papers = site.data.research.published | where: 'group', 'main' %}{% for work in papers %}{% include publication-entry.html work=work compact=true %}{% endfor %}
+  <h3 class="subheading">Workshops &amp; posters</h3>{% assign papers = site.data.research.published | where: 'group', 'workshop' %}{% for work in papers %}{% include publication-entry.html work=work compact=true %}{% endfor %}
+</section>
 
-<div class="cv-timeline">
-  <article><div class="cv-date">2026—Now</div><div><h3>Ph.D. Scholar · CSRE, IIT Bombay</h3><p>CPI: 9.00</p></div></article>
-  <article><div class="cv-date">2023—25</div><div><h3>M.S. by Research · AI &amp; Data Science, C-MInDS, IIT Bombay</h3><p>Completed with CPI: 9.31.</p></div></article>
-  <article><div class="cv-date">2018—22</div><div><h3>B.Tech. · Mechanical Engineering, MNNIT Allahabad</h3><p>CPI: 9.10.</p></div></article>
-</div>
-
-## Publications
-
-<div class="cv-publication-list">
-{% for work in site.data.research.published %}
-  <article>
-    <p class="research-meta">{{ work.venue }} · {{ work.status }}</p>
-    <h3>{{ work.title }}</h3>
-    {% if work.affiliation %}<p class="research-affiliation">{{ work.affiliation }}</p>{% endif %}
-    {% if work.links.size > 0 %}<p>{% for link in work.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %} · {% endunless %}{% endfor %}</p>{% endif %}
-  </article>
-{% endfor %}
-</div>
-
-<p class="section-link"><a href="{{ '/projects/' | relative_url }}">Ongoing research is listed on the Research page →</a></p>
-
-## Recognition
-
-<div class="cv-facts">
-  <div><span>2026</span><strong>Award for Excellence in Research</strong><p>C-MInDS, IIT Bombay</p></div>
-  <div><span>2022</span><strong>GATE: 97.84 percentile</strong><p>Engineering Sciences (XE); 96 percentile in Mechanical Engineering (ME)</p></div>
-  <div><span>2018</span><strong>Top 1 percentile</strong><p>JEE Main</p></div>
-</div>
-
-## Teaching &amp; service
-
-<div class="cv-two-column">
-  <div><h3>Teaching</h3><p>Teaching Assistant, IIT Bombay — DS 303: Introduction to Machine Learning; e-PGD: Python Programming.</p></div>
-  <div><h3>Service</h3><p>Reviewer or program committee member for AAAI, AISTATS, ICVGIP, the NeurIPS Position Paper Track, and the International Journal of Computer Vision.</p></div>
-</div>
-
-## Skills
-
-<p class="skill-line">Python · C++ · PyTorch · TensorFlow · scikit-learn · OpenCV · Hugging Face · Gaussian Splatting · Indic NLP · financial time-series modeling · production ML systems</p>
+<section id="service"><div class="section-heading"><h2>Teaching &amp; service</h2></div><div class="cv-columns"><div><h3>Teaching</h3>{% for item in cv.teaching %}<p><strong>{{ item.course }}</strong><br>{{ item.role }}, {{ item.institution }}<br><span class="meta">{{ item.date }}</span></p>{% endfor %}<h3>Mentoring</h3>{% for item in cv.mentoring %}<p>{{ item.role }}, {{ item.institution }}<br>{{ item.summary }}<br><span class="meta">{{ item.date }}</span></p>{% endfor %}</div><div><h3>Academic service</h3>{% for item in cv.service %}<p><strong>{{ item.name }}</strong><br>{{ item.role }} · {{ item.year }}</p>{% endfor %}</div></div></section>
+<section><div class="section-heading"><h2>Skills &amp; interests</h2></div>{% for item in cv.skills %}<p>{{ item.keywords | join: ' · ' }}</p>{% endfor %}{% for item in cv.interests %}<p class="meta">{{ item.keywords | join: ' · ' }}</p>{% endfor %}</section>

@@ -1,27 +1,30 @@
 ---
-layout: archive
+layout: portfolio
 title: "Publications"
 permalink: /publications/
-author_profile: false
+eyebrow: "Ideas, made public"
+description: "Published and accepted research, from generalization and geometry to language and financial AI."
 ---
 
-<p class="intro intro--small">Published work in generalizable recognition, open-world learning, language technology, and multimodal AI.</p>
-
-<h2>Published &amp; accepted</h2>
-
-<div class="research-list">
-{% for work in site.data.research.published %}
-  <article class="research-item">
-    <p class="research-meta">{{ work.venue }} · {{ work.status }}</p>
-    <h3>{{ work.title }}</h3>
-    {% if work.affiliation %}<p class="research-affiliation">{{ work.affiliation }}</p>{% endif %}
-    <p class="research-authors">{{ work.authors }}</p>
-    <p>{{ work.summary }}</p>
-    {% if work.links.size > 0 %}
-      <p class="research-links">{% for link in work.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %}<span>·</span>{% endunless %}{% endfor %}</p>
-    {% endif %}
-  </article>
-{% endfor %}
+<div data-filter-list="publications">
+  <form class="filter-bar" data-filters hidden>
+    <label>Topic<select name="topic"><option value="">All topics</option><option value="vision">Vision &amp; geometry</option><option value="language">Language</option><option value="finance">Financial AI</option><option value="multimodal">Multimodal &amp; health</option></select></label>
+    <label>My affiliation<select name="affiliation"><option value="">All affiliations</option><option value="IIT Bombay">IIT Bombay</option><option value="MOFSL">MOFSL</option></select></label>
+    <button type="reset" class="reset-button">Reset</button>
+    <p class="meta filter-count" aria-live="polite" role="status"></p>
+  </form>
+  <p class="meta filter-note" hidden>Filters combine. Affiliations are shown only where confirmed; “All” includes every collaboration.</p>
+  <section data-filter-group>
+    <div class="section-heading"><h2>Conferences &amp; journals</h2></div>
+    {% assign main_papers = site.data.research.published | where: 'group', 'main' %}
+    {% for work in main_papers %}{% include publication-entry.html work=work %}{% endfor %}
+  </section>
+  <section data-filter-group>
+    <div class="section-heading"><h2>Workshops &amp; posters</h2></div>
+    <p class="section-intro">Acceptance is distinct from publication or presentation. AI4F 2026 acceptances are for non-archival posters, not proceedings papers.</p>
+    {% assign workshops = site.data.research.published | where: 'group', 'workshop' %}
+    {% for work in workshops %}{% include publication-entry.html work=work %}{% endfor %}
+  </section>
+  <p class="empty-state" hidden>No papers match these filters. Try another topic or reset to see all work.</p>
 </div>
-
-<p class="section-link"><a href="{{ '/projects/' | relative_url }}">See ongoing research →</a></p>
+<aside class="end-note"><h2>What’s next?</h2><p>Current projects live under <a href="{{ '/projects/' | relative_url }}#ongoing">ongoing research</a>, separate from accepted and published work.</p></aside>

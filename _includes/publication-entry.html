@@ -1,0 +1,17 @@
+{% assign work = include.work %}
+<article class="publication" id="{{ work.id }}" data-filter-item data-topic="{{ work.topic }}" data-affiliation="{{ work.affiliations | join: '|' }}">
+  <p class="meta">{{ work.venue | escape }} <span aria-hidden="true">·</span> {{ work.status }}{% if work.note %} <span aria-hidden="true">·</span> {{ work.note }}{% endif %}</p>
+  <h3>{{ work.title | escape }}</h3>
+  <p class="authors">{{ work.authors | escape | replace: 'Vaibhav Rathore', '<strong>Vaibhav Rathore</strong>' }}</p>
+  {% if work.affiliation %}<p class="affiliation">{{ work.affiliation | escape }}</p>{% endif %}
+  {% if work.links.size > 0 %}<div class="text-links publication-links">{% for link in work.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</div>{% endif %}
+  {% unless include.compact %}
+  <details class="paper-details">
+    <summary>Summary &amp; reference<span class="sr-only"> for {{ work.title | escape }}</span></summary>
+    <p>{{ work.summary | escape }}</p>
+    <p class="reference">{{ work.authors | escape }}. “{{ work.title | escape }}.” {{ work.venue | escape }}. {{ work.status }}{% if work.note %}; {{ work.note | downcase }}{% endif %}.</p>
+    <button class="copy-button" type="button" data-copy-reference hidden>Copy reference</button>
+    <span class="copy-status meta" aria-live="polite"></span>
+  </details>
+  {% endunless %}
+</article>

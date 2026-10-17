@@ -6,34 +6,37 @@
 - year: "2026"
   type: "Recognition"
   title: "Award for Excellence in Research"
+  recent: true
   summary: "Recognized by C-MInDS, IIT Bombay for research completed during the M.S. by Research program."
 
 - year: "2026"
   type: "Research"
   title: "Expanded into language, multimodal, and financial AI"
-  summary: "Published or presented work on Indic tokenization, multilingual interpretability, medical question answering, and open-world pedestrian analysis."
+  summary: "Research spanning Indic tokenization, multilingual interpretability, medical question answering, and open-world pedestrian analysis, with accepted and published work listed separately."
   link: "/publications/"
   link_label: "View 2026 publications"
 
 - year: "2026"
   type: "Research"
   title: "HElIOS accepted at WACV 2027"
+  recent: true
   summary: "My IIT Bombay research on hyperbolic generalized category discovery for remote-sensing imagery was accepted for WACV 2027."
-  link: "/publications/"
-  link_label: "View publications"
+  link: "/publications/#helios"
+  link_label: "Read about HElIOS"
 
 - year: "2026"
   type: "Research"
   title: "Three AI4F papers accepted for poster presentation"
-  summary: "My Motilal Oswal Financial Services research on CandleDiff, Align Before You Quantize, and Many Agents, Few Minds was accepted to the AI4F Workshop at ACM ICAIF 2026."
-  link: "/publications/"
-  link_label: "View publications"
+  recent: true
+  summary: "My Motilal Oswal research on CandleDiff, Align Before You Quantize, and Many Agents, Few Minds was accepted for non-archival workshop posters. The workshop is scheduled for 14 November 2026; acceptance does not imply completed presentation."
+  link: "/publications/#halo"
+  link_label: "Explore the AI4F work"
 
 - year: "2025"
   type: "Research"
   title: "DG-GCD research at CVPR and NeurIPS"
   summary: "Introduced methods for domain-generalized category discovery through adaptive task arithmetic and hyperbolic representation learning."
-  link: "/publications/"
+  link: "/publications/#dg-gcd"
   link_label: "View publications"
 
 - year: "2025"

@@ -37,6 +37,13 @@
       "summary": "AI Research Team; time-series and tabular foundation models for financial data, India-focused AI, Indic TTS/ASR tokenization, lip-sync systems, and research for top-tier venues. Public details are intentionally high-level because the work is proprietary."
     },
     {
+      "company": "Vehant Technologies",
+      "position": "Research Intern, Vehant Fellow Track",
+      "startDate": "2025-09",
+      "endDate": "2025-11",
+      "summary": "Pedestrian Attribute Recognition using hyperbolic, graph-based, correlation-aware, and vision-language methods."
+    },
+    {
       "company": "Motilal Oswal Financial Services Ltd. (MOFSL)",
       "position": "Research Intern",
       "startDate": "2025-09",
@@ -49,13 +56,6 @@
       "startDate": "2025-05",
       "endDate": "2025-07",
       "summary": "3D lip synchronization using Gaussian Splatting and controllable 3D avatars."
-    },
-    {
-      "company": "Vehant Technologies",
-      "position": "Research Intern, Vehant Fellow Track",
-      "startDate": "2025-09",
-      "endDate": "2025-11",
-      "summary": "Pedestrian Attribute Recognition using hyperbolic, graph-based, correlation-aware, and vision-language methods."
     },
     {
       "company": "Clinical AI Assistance",
@@ -140,117 +140,95 @@
       "summary": "Awarded for M.S. by Research excellence."
     }
   ],
-  "publications": [
-    {
-      "name": "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve",
-      "publisher": "Multi-LLL Workshop at AACL-IJCNLP 2026",
-      "releaseDate": "2026",
-      "summary": "Accepted. Evaluates language-subspace interventions for multilingual mathematical reasoning and response-language fidelity."
-    },
-    {
-      "name": "SuTRA: Structurally-Unified Tokenization with Root Awareness",
-      "publisher": "Interspeech 2026",
-      "releaseDate": "2026",
-      "website": "https://arxiv.org/abs/2608.18087",
-      "summary": "Accepted. Code: https://github.com/MO-AI-Research/SUTRA; project: https://mo-vaibhavr-43300.github.io/SuTRA/."
-    },
-    {
-      "name": "M³ QuestionIng: Multi-modal Multi-span Medical Question Answering",
-      "publisher": "ACM Transactions on Computing for Healthcare",
-      "releaseDate": "2026",
-      "website": "https://dl.acm.org/doi/10.1145/3820162",
-      "summary": "Accepted; code and dataset at https://github.com/anisha0325/M3QA."
-    },
-    {
-      "name": "HiDISC: A Hyperbolic Framework for Domain Generalization with Generalized Category Discovery",
-      "publisher": "NeurIPS 2025",
-      "releaseDate": "2025",
-      "website": "https://arxiv.org/abs/2510.17188"
-    },
-    {
-      "name": "When Domain Generalization Meets Generalized Category Discovery: An Adaptive Task-Arithmetic Driven Approach",
-      "publisher": "CVPR 2025",
-      "releaseDate": "2025",
-      "website": "https://openaccess.thecvf.com/content/CVPR2025/html/Rathore_When_Domain_Generalization_meets_Generalized_Category_Discovery_An_Adaptive_Task-Arithmetic_CVPR_2025_paper.html"
-    },
-    {
-      "name": "FoCUS: Bridging Fine-Grained Recognition and Open-World Discovery across Domains",
-      "publisher": "Ongoing Research",
-      "summary": "Connects fine-grained recognition with open-world discovery under cross-domain distribution shifts."
-    },
-    {
-      "name": "Towards Unconstrained Pedestrian Attribute Recognition: Evaluating Domain Shift and Open-World Constraints",
-      "publisher": "NewInML Workshop at NeurIPS 2026",
-      "releaseDate": "2026",
-      "summary": "Poster on pedestrian attribute recognition under domain shift and open-world constraints."
-    },
-    {
-      "name": "Scalaris: A Scalable Enterprise Memory Architecture for Conversational AI Assistants",
-      "publisher": "Ongoing Research",
-      "summary": "A unified long- and short-term memory architecture for accurate, token-efficient enterprise conversational systems."
-    },
-    {
-      "name": "Zero-Shot or Fine-Tuned? Benchmarking Time-Series Foundation Models Across Indian and US Equity Markets",
-      "publisher": "Ongoing Research",
-      "summary": "A benchmark of adaptation strategies for time-series foundation models across Indian and US equity data."
-    },
-    {
-      "name": "CandleDiff: Contextual Diffusion for Structurally Valid OHLC Generation",
-      "publisher": "AI4F Workshop at ACM ICAIF 2026",
-      "releaseDate": "2026",
-      "summary": "Accepted poster. Motilal Oswal Financial Services research on contextual diffusion for controllable firm-level OHLC generation with guaranteed candle geometry."
-    },
-    {
-      "name": "Align Before You Quantize: Making Leech Lattice Tokenization Work for Time Series",
-      "publisher": "AI4F Workshop at ACM ICAIF 2026",
-      "releaseDate": "2026",
-      "summary": "Accepted poster. Motilal Oswal Financial Services research on hyperspherical alignment and phased training for lattice-based time-series tokenization."
-    },
-    {
-      "name": "Position: Many Agents, Few Minds — Model Concentration as a Governance Metric for Agent-Native Financial Markets",
-      "publisher": "AI4F Workshop at ACM ICAIF 2026",
-      "releaseDate": "2026",
-      "summary": "Accepted poster. Motilal Oswal Financial Services research on model concentration and systemic risk in agent-native financial markets."
-    },
-    {
-      "name": "NOMAD: Federated Generalized Category Discovery Across Unseen Domains",
-      "publisher": "Ongoing Research",
-      "summary": "Known- and novel-category discovery in unseen domains with decentralized, non-IID source data."
-    },
-    {
-      "name": "HElIOS: Hyperbolic Generalized Category Discovery for Remote Sensing",
-      "publisher": "WACV 2027",
-      "releaseDate": "2027",
-      "summary": "Accepted. IIT Bombay research on a hyperbolic framework for discovering known and novel categories in remote-sensing imagery."
-    },
-    {
-      "name": "Hyperbolic Geometry for Remote Sensing: From Hierarchical Scene Embeddings to Open-World Earth Observation",
-      "publisher": "Ongoing Research",
-      "summary": "A unified perspective on hyperbolic learning for hierarchical and open-world Earth observation."
-    }
-  ],
   "skills": [
     {
       "name": "AI and Machine Learning",
-      "keywords": ["Python", "PyTorch", "Computer Vision", "Indic NLP", "Gaussian Splatting", "Financial Time Series"]
+      "keywords": [
+        "Python",
+        "PyTorch",
+        "Computer Vision",
+        "Indic NLP",
+        "Gaussian Splatting",
+        "Financial Time Series"
+      ]
     }
   ],
   "languages": [],
   "interests": [
     {
       "name": "Research",
-      "keywords": ["Domain Generalization", "Generalized Category Discovery", "Fine-Grained Recognition", "Open-World Learning", "Representation Learning"]
+      "keywords": [
+        "Domain Generalization",
+        "Generalized Category Discovery",
+        "Fine-Grained Recognition",
+        "Open-World Learning",
+        "Representation Learning"
+      ]
     }
   ],
   "references": [],
   "presentations": [],
   "teaching": [
     {
-      "course": "DS 303: Introduction to Machine Learning; e-PGD: Introduction to Python Programming",
+      "course": "DS 303: Introduction to Machine Learning",
       "institution": "IIT Bombay",
       "role": "Teaching Assistant",
-      "date": "2024–Present"
+      "date": "Jul 2024 - Present"
+    },
+    {
+      "course": "e-PGD: Introduction to Python Programming",
+      "institution": "IIT Bombay",
+      "role": "Teaching Assistant",
+      "date": "Jan 2025 - Present"
     }
   ],
-  "portfolio": []
+  "portfolio": [],
+  "updated": "2026-10-17",
+  "service": [
+    {
+      "name": "AAAI",
+      "year": "2027",
+      "role": "Program Committee"
+    },
+    {
+      "name": "AISTATS",
+      "year": "2027",
+      "role": "Reviewer"
+    },
+    {
+      "name": "ICVGIP",
+      "year": "2026",
+      "role": "Reviewer"
+    },
+    {
+      "name": "NeurIPS Position Paper Track",
+      "year": "2026",
+      "role": "Reviewer"
+    },
+    {
+      "name": "International Journal of Computer Vision",
+      "year": "2025-2026",
+      "role": "Reviewer"
+    }
+  ],
+  "achievements": [
+    {
+      "year": "2022",
+      "title": "GATE",
+      "summary": "97.84 percentile in Engineering Sciences (XE); 96 percentile in Mechanical Engineering (ME)."
+    },
+    {
+      "year": "2018",
+      "title": "JEE Main",
+      "summary": "Top one percentile."
+    }
+  ],
+  "mentoring": [
+    {
+      "role": "Student mentor",
+      "institution": "MNNIT Allahabad",
+      "date": "Jul 2021 - May 2022",
+      "summary": "Mentored 20 students."
+    }
+  ]
 }

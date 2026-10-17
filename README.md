@@ -47,6 +47,20 @@ Open `http://localhost:4000` to preview the site. Before publishing, run:
 bundle exec jekyll build
 ```
 
+The downloadable CV is generated from the same `_data/cv.json` and
+`_data/research.yml` records used by the site:
+
+```bash
+python3 -m venv /tmp/portfolio-cv-env
+/tmp/portfolio-cv-env/bin/pip install -r requirements-cv.txt
+/tmp/portfolio-cv-env/bin/python scripts/build_cv.py
+```
+
+The public CV and publication lists intentionally exclude ongoing venues,
+review status, submission identifiers, and private manuscript links. Add a
+paper to `published` only when its accepted or published status is public;
+keep work in `ongoing` until then.
+
 ## Repository structure
 
 ```text

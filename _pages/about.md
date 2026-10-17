@@ -1,76 +1,60 @@
 ---
-layout: single
+layout: portfolio
 title: "Vaibhav Rathore"
 permalink: /
-author_profile: false
-redirect_from:
-  - /about/
-  - /about.html
+home: true
+description: "AI researcher at IIT Bombay and Motilal Oswal. Exploring generalization, open-world learning, and AI for real-world systems."
+redirect_from: [/about/, /about.html]
 ---
 
-<div class="profile-intro">
-  <div class="profile-copy">
-    <p class="eyebrow">AI researcher &amp; engineer · Mumbai, India</p>
-    <p class="intro">I build learning systems that generalize beyond their training data—across domains, categories, languages, and real-world constraints.</p>
-    <p>I am a Senior AI Data Scientist at Motilal Oswal Financial Services and a Ph.D. Scholar at CSRE, IIT Bombay. My research sits at the intersection of domain generalization, open-world recognition, representation learning, and applied AI.</p>
-    <p class="text-links"><a href="mailto:vaibhav.rathor.in@gmail.com">Email</a> <a href="https://scholar.google.co.in/citations?hl=en&user=VH1wZJkAAAAJ">Google Scholar</a> <a href="https://github.com/Vaibhavrathore1999">GitHub</a> <a href="https://www.linkedin.com/in/vaibhav-rathore-ab696b188/">LinkedIn</a></p>
+<section class="hero" aria-labelledby="intro-title">
+  <div>
+    <p class="eyebrow">Research, curiosity &amp; things that work</p>
+    <h1 id="intro-title">Vaibhav<br>Rathore<span class="wordmark-dot">.</span></h1>
+    <p class="hero-statement">Learning beyond<br>the familiar.</p>
   </div>
-  <figure class="profile-portrait">
-    <img src="{{ '/images/profile.png' | relative_url }}" alt="Vaibhav Rathore" fetchpriority="high">
-  </figure>
+  <figure class="portrait"><img src="{{ '/images/profile.png' | relative_url }}" alt="Vaibhav Rathore" width="210" height="252" fetchpriority="high"><figcaption>AI researcher &amp; engineer<br>Mumbai, India</figcaption></figure>
+</section>
+<div class="intro-copy">
+  <p>I build learning systems that generalize beyond their training data—across domains, categories, languages, and real-world constraints.</p>
+  <div class="roles"><p><span>Academic research</span>Ph.D. Scholar · IIT Bombay</p><p><span>Industry research</span>Senior AI Data Scientist · MOFSL</p></div>
+  <div class="text-links"><a href="mailto:{{ site.data.cv.basics.email }}">Email</a><a href="{{ site.author.googlescholar }}">Scholar</a><a href="https://github.com/Vaibhavrathore1999">GitHub</a><a href="{{ site.author.linkedin }}">LinkedIn</a><a href="{{ '/cv/' | relative_url }}">CV ↗</a></div>
 </div>
 
-## Selected work
+<aside class="now-block" aria-labelledby="now-title">
+  <div><h2 id="now-title">Now</h2><p class="meta">Updated {{ site.data.home.updated | date: '%d %b %Y' }}</p></div>
+  <div>{% for line in site.data.home.now %}<p>{{ line }}</p>{% endfor %}</div>
+</aside>
 
-<div class="research-list">
-{% for work in site.data.research.published limit:4 %}
-  <article class="research-item">
-    <p class="research-meta">{{ work.venue }} · {{ work.status }}</p>
-    <h3>{{ work.title }}</h3>
-    {% if work.affiliation %}<p class="research-affiliation">{{ work.affiliation }}</p>{% endif %}
-    <p>{{ work.summary }}</p>
-    <p class="research-links">{% for link in work.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %}<span>·</span>{% endunless %}{% endfor %}</p>
-  </article>
-{% endfor %}
-</div>
+<section aria-labelledby="selected-title">
+  <div class="section-heading"><h2 id="selected-title"><span class="section-number">01</span> Selected work</h2><a href="{{ '/publications/' | relative_url }}">All publications ↗</a></div>
+  <div class="featured-grid">
+  {% for id in site.data.home.featured %}{% assign work = site.data.research.published | where: 'id', id | first %}
+    <article class="featured-work">
+      <p class="meta">{{ work.venue }} · {{ work.status }}</p>
+      <h3><a href="{{ '/publications/' | relative_url }}#{{ work.id }}">{{ work.title }}</a></h3>
+      <p>{{ work.summary }}</p>
+      <a class="work-link" href="{{ '/publications/' | relative_url }}#{{ work.id }}">Explore work <span aria-hidden="true">↗</span><span class="sr-only">: {{ work.title }}</span></a>
+    </article>
+  {% endfor %}
+  </div>
+</section>
 
-<p class="section-link"><a href="{{ '/publications/' | relative_url }}">View all publications →</a></p>
+<section aria-labelledby="recent-title">
+  <div class="section-heading"><h2 id="recent-title"><span class="section-number">02</span> Recent milestones</h2><a href="#journey">Full journey ↓</a></div>
+  <div class="recent-list">{% assign recent = site.data.timeline | where: 'recent', true %}{% for item in recent limit:3 %}<div class="recent-item"><span class="meta">{{ item.year }}</span>{% include journey-item.html item=item %}</div>{% endfor %}</div>
+</section>
 
-## Ongoing research
+<section id="journey" aria-labelledby="journey-title">
+  <div class="section-heading"><h2 id="journey-title"><span class="section-number">03</span> A path into research</h2></div>
+  <p class="section-intro">From mechanical engineering to learning systems. The work, people, and milestones along the way.</p>
+  {% assign years = site.data.timeline | group_by: 'year' %}
+  <div class="journey">{% for year in years %}<details class="journey-year" {% if forloop.first %}open{% endif %}><summary>{{ year.name }}<span>{{ year.items.size }} milestones</span></summary><div class="journey-events">{% for item in year.items %}{% include journey-item.html item=item %}{% endfor %}</div></details>{% endfor %}</div>
+</section>
 
-<div class="research-list compact">
-{% for work in site.data.research.ongoing limit:4 %}
-  <article class="research-item">
-    <h3>{{ work.title }}</h3>
-    <p>{{ work.summary }}</p>
-  </article>
-{% endfor %}
-</div>
-
-<p class="section-link"><a href="{{ '/projects/' | relative_url }}">View all current research →</a></p>
-
-## Journey
-
-<p class="section-note">Selected milestones across research, education, and industry.</p>
-
-<div class="journey-timeline">
-{% for milestone in site.data.timeline %}
-  <article class="journey-item">
-    <div class="journey-year">{{ milestone.year }}</div>
-    <div class="journey-content">
-      <p class="journey-type">{{ milestone.type }}</p>
-      <h3>{{ milestone.title }}</h3>
-      <p>{{ milestone.summary }}</p>
-      {% if milestone.link %}<p class="journey-link"><a href="{{ milestone.link | relative_url }}">{{ milestone.link_label }} →</a></p>{% endif %}
-    </div>
-  </article>
-{% endfor %}
-</div>
-
-## Professional service
-
-Reviewer or program committee member for AAAI, AISTATS, ICVGIP, the NeurIPS Position Paper Track, and the International Journal of Computer Vision.
-
-## Contact
-
-I am open to thoughtful research collaborations. If our interests overlap, [send me a short note](mailto:vaibhav.rathor.in@gmail.com) with the problem you are exploring.
+<section class="contact-section" aria-labelledby="contact-title">
+  <p class="eyebrow">Start a conversation</p>
+  <h2 id="contact-title">Good questions welcome.</h2>
+  <p>Interested in open-world learning, geometric representations, multilingual AI, or financial machine learning? I’m open to thoughtful research collaborations.</p>
+  <a class="contact-link" href="mailto:{{ site.data.cv.basics.email }}">Say hello ↗</a>
+</section>
