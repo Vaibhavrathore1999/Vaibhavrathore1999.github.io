@@ -216,8 +216,9 @@
     },
     {
       "name": "HElIOS: Hyperbolic Generalized Category Discovery for Remote Sensing",
-      "publisher": "Ongoing Research",
-      "summary": "Hyperbolic representations for discovering known and novel categories in remote-sensing imagery."
+      "publisher": "WACV 2027",
+      "releaseDate": "2027",
+      "summary": "Accepted. A hyperbolic framework for discovering known and novel categories in remote-sensing imagery."
     },
     {
       "name": "Hyperbolic Geometry for Remote Sensing: From Hierarchical Scene Embeddings to Open-World Earth Observation",

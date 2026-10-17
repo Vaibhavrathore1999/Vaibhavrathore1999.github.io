@@ -1,4 +1,11 @@
 published:
+  - title: "HElIOS: Hyperbolic Generalized Category Discovery for Remote Sensing"
+    authors: "Sadia Hussain, Vaibhav Rathore, Divyam Gupta, Saurabh Prasad, Aleksandra Pizurica, Biplab Banerjee"
+    venue: "WACV 2027"
+    status: "Accepted"
+    summary: "Introduces a hyperbolic framework for discovering known and novel categories in remote-sensing imagery."
+    links: []
+
   - title: "Beyond Accuracy: What Language-Subspace Interventions Capture, Remove, and Improve"
     authors: "Shaanil Punglia, Dadhichi Telwadkar, Vaibhav Rathore, Siddharth Sureka, Neha Bhargava"
     venue: "Multi-LLL Workshop at AACL-IJCNLP 2026"
@@ -99,10 +106,6 @@ ongoing:
   - title: "FoCUS: Bridging Fine-Grained Recognition and Open-World Discovery across Domains"
     authors: "Vaibhav Rathore, Divyam Gupta, Moloud Abdar, Subhasis Chaudhuri, Biplab Banerjee"
     summary: "Connects fine-grained recognition with open-world discovery under cross-domain distribution shifts."
-
-  - title: "HElIOS: Hyperbolic Generalized Category Discovery for Remote Sensing"
-    authors: "Sadia Hussain, Vaibhav Rathore, Divyam Gupta, Saurabh Prasad, Aleksandra Pizurica, Biplab Banerjee"
-    summary: "Explores hyperbolic representations for discovering known and novel categories in remote-sensing imagery."
 
   - title: "Hyperbolic Geometry for Remote Sensing: From Hierarchical Scene Embeddings to Open-World Earth Observation"
     authors: "Vaibhav Rathore and collaborators"

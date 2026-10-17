@@ -15,6 +15,13 @@
   link: "/publications/"
   link_label: "View 2026 publications"
 
+- year: "2026"
+  type: "Research"
+  title: "HElIOS accepted at WACV 2027"
+  summary: "Our hyperbolic framework for generalized category discovery in remote-sensing imagery was accepted for WACV 2027."
+  link: "/publications/"
+  link_label: "View publications"
+
 - year: "2025"
   type: "Research"
   title: "DG-GCD research at CVPR and NeurIPS"
