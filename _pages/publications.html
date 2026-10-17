@@ -24,16 +24,4 @@ author_profile: false
 {% endfor %}
 </div>
 
-<h2>Ongoing research</h2>
-
-<p class="section-note">Research in progress. Venue, submission, and review details are intentionally omitted.</p>
-
-<div class="research-list compact">
-{% for work in site.data.research.ongoing %}
-  <article class="research-item">
-    <h3>{{ work.title }}</h3>
-    <p class="research-authors">{{ work.authors }}</p>
-    <p>{{ work.summary }}</p>
-  </article>
-{% endfor %}
-</div>
+<p class="section-link"><a href="{{ '/projects/' | relative_url }}">See ongoing research →</a></p>
