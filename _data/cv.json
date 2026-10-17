@@ -198,19 +198,19 @@
       "name": "CandleDiff: Contextual Diffusion for Structurally Valid OHLC Generation",
       "publisher": "AI4F Workshop at ACM ICAIF 2026",
       "releaseDate": "2026",
-      "summary": "Accepted poster. Contextual diffusion for controllable firm-level OHLC generation with guaranteed candle geometry."
+      "summary": "Accepted poster. Motilal Oswal Financial Services research on contextual diffusion for controllable firm-level OHLC generation with guaranteed candle geometry."
     },
     {
       "name": "Align Before You Quantize: Making Leech Lattice Tokenization Work for Time Series",
       "publisher": "AI4F Workshop at ACM ICAIF 2026",
       "releaseDate": "2026",
-      "summary": "Accepted poster. Hyperspherical alignment and phased training for lattice-based time-series tokenization."
+      "summary": "Accepted poster. Motilal Oswal Financial Services research on hyperspherical alignment and phased training for lattice-based time-series tokenization."
     },
     {
       "name": "Position: Many Agents, Few Minds — Model Concentration as a Governance Metric for Agent-Native Financial Markets",
       "publisher": "AI4F Workshop at ACM ICAIF 2026",
       "releaseDate": "2026",
-      "summary": "Accepted poster. A model-concentration perspective on systemic risk in agent-native financial markets."
+      "summary": "Accepted poster. Motilal Oswal Financial Services research on model concentration and systemic risk in agent-native financial markets."
     },
     {
       "name": "NOMAD: Federated Generalized Category Discovery Across Unseen Domains",
@@ -221,7 +221,7 @@
       "name": "HElIOS: Hyperbolic Generalized Category Discovery for Remote Sensing",
       "publisher": "WACV 2027",
       "releaseDate": "2027",
-      "summary": "Accepted. A hyperbolic framework for discovering known and novel categories in remote-sensing imagery."
+      "summary": "Accepted. IIT Bombay research on a hyperbolic framework for discovering known and novel categories in remote-sensing imagery."
     },
     {
       "name": "Hyperbolic Geometry for Remote Sensing: From Hierarchical Scene Embeddings to Open-World Earth Observation",

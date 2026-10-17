@@ -1,6 +1,7 @@
 published:
   - title: "HElIOS: Hyperbolic Generalized Category Discovery for Remote Sensing"
     authors: "Sadia Hussain, Vaibhav Rathore, Divyam Gupta, Saurabh Prasad, Aleksandra Pizurica, Biplab Banerjee"
+    affiliation: "Vaibhav's affiliation: IIT Bombay"
     venue: "WACV 2027"
     status: "Accepted"
     summary: "Introduces a hyperbolic framework for discovering known and novel categories in remote-sensing imagery."
@@ -8,6 +9,7 @@ published:
 
   - title: "Align Before You Quantize: Making Leech Lattice Tokenization Work for Time Series"
     authors: "Akanksh Adugani Vanjari, Vaibhav Rathore, Siddhant Gole, Siddharth Sureka, Neha Bhargava"
+    affiliation: "Vaibhav's affiliation: Motilal Oswal Financial Services"
     venue: "AI4F Workshop at ACM ICAIF 2026"
     status: "Accepted poster"
     summary: "Uses hyperspherical alignment and phased training to improve lattice-codebook utilization and reconstruction for time-series tokenization."
@@ -15,6 +17,7 @@ published:
 
   - title: "CandleDiff: Contextual Diffusion for Structurally Valid OHLC Generation"
     authors: "Siddhant Gole, Nachiketa Ratnakar Patil, Vaibhav Rathore, Siddharth Sureka, Neha Bhargava"
+    affiliation: "Vaibhav's affiliation: Motilal Oswal Financial Services"
     venue: "AI4F Workshop at ACM ICAIF 2026"
     status: "Accepted poster"
     summary: "Introduces contextual diffusion for controllable firm-level OHLC generation with guaranteed candle geometry and market-aware conditioning."
@@ -22,6 +25,7 @@ published:
 
   - title: "Position: Many Agents, Few Minds — Model Concentration as a Governance Metric for Agent-Native Financial Markets"
     authors: "Vaibhav Rathore, Siddhant Gole, Siddharth Sureka, Neha Bhargava"
+    affiliation: "Vaibhav's affiliation: Motilal Oswal Financial Services"
     venue: "AI4F Workshop at ACM ICAIF 2026"
     status: "Accepted poster"
     summary: "Argues that agent-based finance can decentralize intermediation while concentrating decisions in shared foundation models, and proposes a metric for that risk."

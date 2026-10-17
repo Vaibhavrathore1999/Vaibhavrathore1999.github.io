@@ -27,6 +27,7 @@ redirect_from:
   <article class="research-item">
     <p class="research-meta">{{ work.venue }} · {{ work.status }}</p>
     <h3>{{ work.title }}</h3>
+    {% if work.affiliation %}<p class="research-affiliation">{{ work.affiliation }}</p>{% endif %}
     <p>{{ work.summary }}</p>
     <p class="research-links">{% for link in work.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% unless forloop.last %}<span>·</span>{% endunless %}{% endfor %}</p>
   </article>

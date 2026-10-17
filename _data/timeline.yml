@@ -18,14 +18,14 @@
 - year: "2026"
   type: "Research"
   title: "HElIOS accepted at WACV 2027"
-  summary: "Our hyperbolic framework for generalized category discovery in remote-sensing imagery was accepted for WACV 2027."
+  summary: "My IIT Bombay research on hyperbolic generalized category discovery for remote-sensing imagery was accepted for WACV 2027."
   link: "/publications/"
   link_label: "View publications"
 
 - year: "2026"
   type: "Research"
   title: "Three AI4F papers accepted for poster presentation"
-  summary: "CandleDiff, Align Before You Quantize, and Many Agents, Few Minds were accepted to the AI4F Workshop at ACM ICAIF 2026."
+  summary: "My Motilal Oswal Financial Services research on CandleDiff, Align Before You Quantize, and Many Agents, Few Minds was accepted to the AI4F Workshop at ACM ICAIF 2026."
   link: "/publications/"
   link_label: "View publications"
 
