@@ -1,0 +1,13 @@
+.essay { max-width: 740px; margin-inline: auto; font-size: 1.075rem; line-height: 1.85; }
+.essay > p, .essay > ul, .essay > ol { margin-block: 1.3rem; }
+.essay h2 { margin: 3.8rem 0 1.2rem; font-size: clamp(1.5rem, 4vw, 2rem); line-height: 1.25; letter-spacing: -.035em; scroll-margin-top: 2rem; }
+.essay h3 { margin: 2.6rem 0 1rem; font-size: 1.25rem; line-height: 1.4; }
+.essay .essay-meta { margin-top: 0; }
+.essay-toc { border-block: 1px solid var(--line); padding: 1.5rem 0; margin: 2rem 0 3rem; font-size: .95rem; }
+.essay-toc ol { padding-left: 1.25rem; columns: 2; column-gap: 2rem; }
+.essay-toc li { break-inside: avoid; margin-bottom: .5rem; }
+.essay mjx-container[display="true"] { overflow-x: auto; overflow-y: hidden; padding: .65rem .15rem; max-width: 100%; }
+.essay details { border: 1px solid var(--line); border-radius: 8px; padding: 1rem 1.25rem; margin: 1.5rem 0; }
+.essay summary { cursor: pointer; font-weight: 600; }
+.essay-back { border-top: 1px solid var(--line); padding-top: 2rem; margin-top: 4rem !important; }
+@media (max-width: 600px) { .essay { font-size: 1rem; } .essay-toc ol { columns: 1; } .essay mjx-container { font-size: 95% !important; } }

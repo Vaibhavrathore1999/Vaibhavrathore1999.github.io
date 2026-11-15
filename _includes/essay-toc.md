@@ -1,0 +1,7 @@
+1. [Derivatives and gradients](#a-derivative-describes-local-change)
+2. [Curvature and convexity](#curvature-explains-how-the-gradient-changes)
+3. [Subgradients and optimality](#a-minimum-without-a-derivative)
+4. [Maximums and subgradient steps](#what-happens-when-the-objective-takes-a-maximum)
+5. [Smoothness and proximal methods](#bounding-the-function-versus-bounding-its-gradient)
+6. [Mixture of Experts](#the-connection-to-mixture-of-expertsand-its-limit)
+7. [Try it yourself](#a-small-problem-to-check-your-understanding)

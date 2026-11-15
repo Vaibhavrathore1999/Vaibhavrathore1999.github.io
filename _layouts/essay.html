@@ -1,0 +1,12 @@
+---
+layout: portfolio
+---
+<article class="essay">
+  <p class="meta essay-meta">{{ page.date | date: '%B %-d, %Y' }} · {{ content | number_of_words | divided_by: 180 | at_least: 1 }} min read · Mathematics</p>
+  <nav class="essay-toc" aria-label="Contents">
+    <p class="eyebrow">In this article</p>
+    {% capture contents %}{% include essay-toc.md %}{% endcapture %}{{ contents | markdownify }}
+  </nav>
+  {{ content }}
+  <p class="essay-back"><a href="{{ '/medium/' | relative_url }}">← All writing</a></p>
+</article>

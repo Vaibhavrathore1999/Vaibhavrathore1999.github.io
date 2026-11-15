@@ -8,6 +8,8 @@ description: "Accessible explanations of machine learning, vision, and the mathe
 
 <div data-filter-list="writing">
   <form class="filter-bar" data-filters hidden><label>Explore a topic<select name="topic"><option value="">All topics</option><option value="foundations">Learning foundations</option><option value="mathematics">Mathematics</option><option value="vision">Computer vision</option></select></label><button type="reset" class="reset-button">Reset</button><p class="meta filter-count" aria-live="polite" role="status"></p></form>
+  {% assign native_posts = site.posts | where: 'native_article', true %}
+  {% for post in native_posts %}<article class="writing-row" data-filter-item data-topic="{{ post.topic }}"><p class="meta">{{ post.topic | capitalize }} · {{ post.date | date: '%B %Y' }}</p><h2><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h2><p>{{ post.excerpt }}</p></article>{% endfor %}
   {% for article in site.data.writing %}<article class="writing-row" data-filter-item data-topic="{{ article.topic }}"><p class="meta">{{ article.topic | capitalize }} · On Medium</p><h2><a href="{{ article.url }}">{{ article.title }} ↗</a></h2><p>{{ article.summary | capitalize }}</p></article>{% endfor %}
   <p class="empty-state" hidden>No articles match this topic. Reset to browse all writing.</p>
 </div>
