@@ -6,7 +6,7 @@ The site presents my work in domain generalization, open-world recognition, repr
 
 ## Site sections
 
-- **Home** — selected work, current research, career journey, roles, and contact details
+- **Home** — introduction, news, publications, blog, experience, education, and awards
 - **Research** — research themes, ongoing work, and completed projects
 - **Publications** — published and accepted papers, followed by ongoing research
 - **Writing** — accessible articles about machine learning and computer vision
@@ -47,14 +47,10 @@ Open `http://localhost:4000` to preview the site. Before publishing, run:
 bundle exec jekyll build
 ```
 
-The downloadable CV is generated from the same `_data/cv.json` and
-`_data/research.yml` records used by the site:
-
-```bash
-python3 -m venv /tmp/portfolio-cv-env
-/tmp/portfolio-cv-env/bin/pip install -r requirements-cv.txt
-/tmp/portfolio-cv-env/bin/python scripts/build_cv.py
-```
+The download links serve the supplied `resume/Resume_Sep26.pdf`, configured by
+`resume_url` in `_config.yml`. The web CV continues to use the site data.
+The optional `scripts/build_cv.py` generator writes a separate `files/cv.pdf`;
+it does not replace the supplied resume.
 
 The public CV and publication lists intentionally exclude ongoing venues,
 review status, submission identifiers, and private manuscript links. Add a

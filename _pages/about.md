@@ -7,54 +7,58 @@ description: "AI researcher at IIT Bombay and Motilal Oswal. Exploring generaliz
 redirect_from: [/about/, /about.html]
 ---
 
-<section class="hero" aria-labelledby="intro-title">
+<section class="academic-intro" aria-labelledby="intro-title">
   <div>
-    <p class="eyebrow">Research, curiosity &amp; things that work</p>
-    <h1 id="intro-title">Vaibhav<br>Rathore<span class="wordmark-dot">.</span></h1>
-    <p class="hero-statement">Learning beyond<br>the familiar.</p>
+    <h1 id="intro-title">Vaibhav Rathore</h1>
+    <p class="intro-role">Ph.D. Scholar, IIT Bombay · Senior AI Data Scientist, MOFSL</p>
+    <p>I am a Ph.D. scholar at IIT Bombay and a Senior AI Data Scientist at Motilal Oswal Financial Services. I completed my M.S. by Research in AI and Data Science at C-MInDS, IIT Bombay, after studying Mechanical Engineering at MNNIT Allahabad.</p>
+    <p>My research focuses on learning systems that generalize across domains and discover new categories. I also work on multilingual models, multimodal learning, and financial AI.</p>
+    <div class="text-links"><a href="{{ site.resume_url | relative_url }}" download>CV (PDF)</a><a href="mailto:{{ site.data.cv.basics.email }}">Email</a><a href="{{ site.author.googlescholar }}">Google Scholar</a><a href="https://github.com/Vaibhavrathore1999">GitHub</a><a href="{{ site.author.linkedin }}">LinkedIn</a></div>
   </div>
-  <figure class="portrait"><img src="{{ '/images/profile.png' | relative_url }}" alt="Vaibhav Rathore" width="210" height="252" fetchpriority="high"><figcaption>AI researcher &amp; engineer<br>Mumbai, India</figcaption></figure>
-</section>
-<div class="intro-copy">
-  <p>I build learning systems that generalize beyond their training data—across domains, categories, languages, and real-world constraints.</p>
-  <div class="roles"><p><span>Academic research</span>Ph.D. Scholar · IIT Bombay</p><p><span>Industry research</span>Senior AI Data Scientist · MOFSL</p></div>
-  <div class="text-links"><a href="mailto:{{ site.data.cv.basics.email }}">Email</a><a href="{{ site.author.googlescholar }}">Scholar</a><a href="https://github.com/Vaibhavrathore1999">GitHub</a><a href="{{ site.author.linkedin }}">LinkedIn</a><a href="{{ '/cv/' | relative_url }}">CV ↗</a></div>
-</div>
-
-<aside class="now-block" aria-labelledby="now-title">
-  <div><h2 id="now-title">Now</h2><p class="meta">Updated {{ site.data.home.updated | date: '%d %b %Y' }}</p></div>
-  <div>{% for line in site.data.home.now %}<p>{{ line }}</p>{% endfor %}</div>
-</aside>
-
-<section aria-labelledby="selected-title">
-  <div class="section-heading"><h2 id="selected-title"><span class="section-number">01</span> Selected work</h2><a href="{{ '/publications/' | relative_url }}">All publications ↗</a></div>
-  <div class="featured-grid">
-  {% for id in site.data.home.featured %}{% assign work = site.data.research.published | where: 'id', id | first %}
-    <article class="featured-work">
-      <p class="meta">{{ work.venue }} · {{ work.status }}</p>
-      <h3><a href="{{ '/publications/' | relative_url }}#{{ work.id }}">{{ work.title }}</a></h3>
-      <p>{{ work.summary }}</p>
-      <a class="work-link" href="{{ '/publications/' | relative_url }}#{{ work.id }}">Explore work <span aria-hidden="true">↗</span><span class="sr-only">: {{ work.title }}</span></a>
-    </article>
-  {% endfor %}
-  </div>
+  <figure class="portrait"><img src="{{ '/images/profile.png' | relative_url }}" alt="Vaibhav Rathore" width="210" height="252" fetchpriority="high"></figure>
 </section>
 
-<section aria-labelledby="recent-title">
-  <div class="section-heading"><h2 id="recent-title"><span class="section-number">02</span> Recent milestones</h2><a href="#journey">Full journey ↓</a></div>
-  <div class="recent-list">{% assign recent = site.data.timeline | where: 'recent', true %}{% for item in recent limit:3 %}<div class="recent-item"><span class="meta">{{ item.year }}</span>{% include journey-item.html item=item %}</div>{% endfor %}</div>
+<section id="news" class="home-section" aria-labelledby="news-title">
+  <h2 id="news-title">News</h2>
+  <ul class="news-list">
+    {% assign recent = site.data.timeline | where: 'recent', true %}{% for item in recent reversed %}<li><span class="meta">{{ item.year }}</span><span>{% if item.link %}<a href="{{ item.link | relative_url }}">{{ item.title }}</a>{% else %}{{ item.title }}{% endif %}.</span></li>{% endfor %}
+  </ul>
 </section>
 
-<section id="journey" aria-labelledby="journey-title">
-  <div class="section-heading"><h2 id="journey-title"><span class="section-number">03</span> A path into research</h2></div>
-  <p class="section-intro">From mechanical engineering to learning systems. The work, people, and milestones along the way.</p>
-  {% assign years = site.data.timeline | group_by: 'year' %}
-  <div class="journey">{% for year in years %}<details class="journey-year" {% if forloop.first %}open{% endif %}><summary>{{ year.name }}<span>{{ year.items.size }} milestones</span></summary><div class="journey-events">{% for item in year.items %}{% include journey-item.html item=item %}{% endfor %}</div></details>{% endfor %}</div>
+<section id="publications" class="home-section" aria-labelledby="publications-title">
+  <h2 id="publications-title">Publications</h2>
+  <p class="section-intro">Published and accepted work. See also <a href="{{ site.author.googlescholar }}">Google Scholar</a>.</p>
+  <ol class="simple-publications">
+    {% for work in site.data.research.published %}
+    <li id="{{ work.id }}">
+      <h3>{% if work.links.size > 0 %}<a href="{{ work.links.first.url }}">{{ work.title | escape }}</a>{% else %}{{ work.title | escape }}{% endif %}</h3>
+      <p class="authors">{{ work.authors | escape | replace: 'Vaibhav Rathore', '<strong>Vaibhav Rathore</strong>' }}</p>
+      <p class="publication-venue">{{ work.venue | escape }} · {{ work.status }}{% if work.note %} · {{ work.note }}{% endif %}</p>
+      {% if work.links.size > 0 %}<div class="text-links">{% for link in work.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</div>{% endif %}
+    </li>
+    {% endfor %}
+  </ol>
+  <p class="section-intro"><a href="{{ '/projects/' | relative_url }}">Research themes &amp; ongoing projects →</a></p>
 </section>
 
-<section class="contact-section" aria-labelledby="contact-title">
-  <p class="eyebrow">Start a conversation</p>
-  <h2 id="contact-title">Good questions welcome.</h2>
-  <p>Interested in open-world learning, geometric representations, multilingual AI, or financial machine learning? I’m open to thoughtful research collaborations.</p>
-  <a class="contact-link" href="mailto:{{ site.data.cv.basics.email }}">Say hello ↗</a>
+<section id="blog" class="home-section" aria-labelledby="blog-title">
+  <h2 id="blog-title">Blog</h2>
+  <ul class="simple-blog">{% for article in site.data.writing limit:4 %}<li><a href="{{ article.url }}">{{ article.title }}</a><p>{{ article.summary | capitalize }}</p></li>{% endfor %}</ul>
+  <a href="{{ '/medium/' | relative_url }}">All writing →</a>
+</section>
+
+<section id="experience" class="home-section" aria-labelledby="experience-title">
+  <h2 id="experience-title">Experience</h2>
+  <ul class="simple-experience">{% for job in site.data.cv.work %}<li><p class="meta">{{ job.startDate | append: '-01' | date: '%b %Y' }} – {% if job.endDate == 'Present' %}Present{% else %}{{ job.endDate | append: '-01' | date: '%b %Y' }}{% endif %}</p><div><h3>{{ job.position }}</h3><p>{{ job.company }}</p></div></li>{% endfor %}</ul>
+</section>
+
+<section id="education" class="home-section" aria-labelledby="education-title">
+  <h2 id="education-title">Education</h2>
+  <ul class="simple-experience">{% for item in site.data.cv.education limit:3 %}<li><p class="meta">{{ item.startDate }} – {{ item.endDate }}</p><div><h3>{{ item.studyType }} · {{ item.institution }}</h3><p>{{ item.area }}</p></div></li>{% endfor %}</ul>
+</section>
+
+<section id="awards" class="home-section" aria-labelledby="awards-title">
+  <h2 id="awards-title">Awards</h2>
+  {% for award in site.data.cv.awards %}<p>{{ award.date | date: '%Y' }} · <strong>{{ award.title }}</strong>, {{ award.awarder }}.</p>{% endfor %}
+  <p><a href="{{ '/cv/' | relative_url }}">Full academic CV</a> · <a href="{{ site.resume_url | relative_url }}" download>Download resume (PDF)</a></p>
 </section>

@@ -1,12 +1,12 @@
 main:
-  - title: "Research"
-    url: /projects/
-
+  - title: "News"
+    url: /#news
   - title: "Publications"
-    url: /publications/
-
-  - title: "Writing"
-    url: /medium/
-
+    url: /#publications
+  - title: "Blog"
+    url: /#blog
+  - title: "Experience"
+    url: /#experience
   - title: "CV"
-    url: /cv/
+    url: /resume/Resume_Sep26.pdf
+    download: true

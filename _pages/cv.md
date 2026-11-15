@@ -8,7 +8,7 @@ redirect_from: [/resume, /cv-json/]
 ---
 
 {% assign cv = site.data.cv %}
-<div class="cv-toolbar"><a class="primary-link" href="{{ '/files/cv.pdf' | relative_url }}" download>Download CV <span class="meta">PDF ↓</span></a><p class="meta">Updated {{ cv.updated | date: '%d %b %Y' }}</p></div>
+<div class="cv-toolbar"><a class="primary-link" href="{{ site.resume_url | relative_url }}" download>Download CV <span class="meta">PDF ↓</span></a><p class="meta">Resume · September 2026</p></div>
 <p>{{ cv.basics.summary }}</p>
 <div class="text-links">{% for profile in cv.basics.profiles %}<a href="{{ profile.url }}">{{ profile.network }}</a>{% endfor %}<a href="mailto:{{ cv.basics.email }}">Email</a></div>
 <nav class="section-nav" aria-label="CV sections"><a href="#experience">Experience</a><a href="#education">Education</a><a href="#recognition">Recognition</a><a href="#cv-publications">Publications</a><a href="#service">Service</a></nav>
