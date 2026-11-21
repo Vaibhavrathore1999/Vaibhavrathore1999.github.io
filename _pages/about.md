@@ -43,7 +43,7 @@ redirect_from: [/about/, /about.html]
 
 <section id="blog" class="home-section" aria-labelledby="blog-title">
   <h2 id="blog-title">Blog</h2>
-  <ul class="simple-blog">{% assign native_posts = site.posts | where: 'native_article', true %}{% for post in native_posts limit:2 %}<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><p>{{ post.excerpt }}</p></li>{% endfor %}{% for article in site.data.writing limit:4 %}<li><a href="{{ article.url }}">{{ article.title }}</a><p>{{ article.summary | capitalize }}</p></li>{% endfor %}</ul>
+  <ul class="simple-blog">{% assign native_posts = site.posts | where: 'native_article', true %}{% for post in native_posts limit:3 %}<li><a href="{{ post.url | relative_url }}">{{ post.title }}</a><p>{{ post.excerpt }}</p></li>{% endfor %}{% for article in site.data.writing limit:4 %}<li><a href="{{ article.url }}">{{ article.title }}</a><p>{{ article.summary | capitalize }}</p></li>{% endfor %}</ul>
   <a href="{{ '/medium/' | relative_url }}">All writing →</a>
 </section>
 
