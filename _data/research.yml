@@ -139,7 +139,9 @@ published:
     venue: "NewInML Workshop at NeurIPS 2026"
     status: "Poster"
     summary: "Studies pedestrian attribute recognition under domain shift and open-world constraints."
-    links: []
+    links:
+      - label: "alphaXiv"
+        url: "https://www.alphaxiv.org/pdf/2611.pedestrian-attribute-domain-shift"
 
 ongoing:
   - title: "Scalaris: A Scalable Enterprise Memory Architecture for Conversational AI Assistants"

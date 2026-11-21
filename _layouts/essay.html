@@ -1,12 +1,26 @@
 ---
 layout: portfolio
 ---
-<article class="essay">
+<article class="essay{% if page.course_reference %} course-reference{% endif %}">
   <p class="meta essay-meta">{{ page.date | date: '%B %-d, %Y' }} · {{ content | number_of_words | divided_by: 180 | at_least: 1 }} min read · Mathematics</p>
   <nav class="essay-toc" aria-label="Contents">
     <p class="eyebrow">In this article</p>
+    {% if page.toc %}
+    <ol>{% for section in page.toc %}<li><a href="#{{ section.id }}">{{ section.title }}</a></li>{% endfor %}</ol>
+    {% else %}
     {% capture contents %}{% include essay-toc.md %}{% endcapture %}{{ contents | markdownify }}
+    {% endif %}
   </nav>
-  {{ content }}
+  {% if page.course_reference %}
+  <div class="revision-controls" hidden>
+    <label for="revision-section">Jump to topic</label>
+    <select id="revision-section"><option value="">Choose a section…</option>{% for section in page.toc %}<option value="{{ section.id }}">{{ section.title }}</option>{% endfor %}</select>
+    <button type="button" data-expand-proofs>Expand all proofs</button>
+    <button type="button" data-print-reference>Print notes</button>
+  </div>
+  {% endif %}
+  {% if page.course_reference %}
+  {{ content | replace: '<table>', '<div class="table-scroll" tabindex="0" role="region" aria-label="Scrollable reference table"><table>' | replace: '</table>', '</table></div>' }}
+  {% else %}{{ content }}{% endif %}
   <p class="essay-back"><a href="{{ '/medium/' | relative_url }}">← All writing</a></p>
 </article>

@@ -20,6 +20,10 @@
   <script src="{{ '/assets/js/essay-math.js' | relative_url }}"></script>
   <script defer src="https://cdn.jsdelivr.net/npm/mathjax@3.2.2/es5/tex-chtml.js"></script>
   {% endif %}
+  {% if page.course_reference %}
+  <link rel="stylesheet" href="{{ '/assets/css/course-reference.css' | relative_url }}">
+  <script defer src="{{ '/assets/js/course-reference.js' | relative_url }}"></script>
+  {% endif %}
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>
