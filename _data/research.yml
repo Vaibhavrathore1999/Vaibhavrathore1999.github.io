@@ -57,9 +57,11 @@ published:
     affiliations: [MOFSL, IIT Bombay]
     authors: "Shaanil Punglia, Dadhichi Telwadkar, Vaibhav Rathore, Siddharth Sureka, Neha Bhargava"
     venue: "Multi-LLL Workshop at AACL-IJCNLP 2026"
-    status: "Accepted"
+    status: "Published"
     summary: "Evaluates whether language-subspace interventions truly remove language information and improve multilingual mathematical reasoning without sacrificing response-language fidelity."
-    links: []
+    links:
+      - label: "ACL Anthology"
+        url: "https://aclanthology.org/2026.multilll-1.2.pdf"
 
   - title: "SuTRA: Structurally-Unified Tokenization with Root Awareness"
     id: sutra
@@ -145,8 +147,12 @@ published:
 
 ongoing:
   - title: "Scalaris: A Scalable Enterprise Memory Architecture for Conversational AI Assistants"
-    authors: "Devarsh Gandhi, Sarthak Pawar, Hemprasad Yashwant Badgujar, Vaibhav Rathore, Siddharth Sureka"
+    id: scalaris
+    authors: "Devarsh Gandhi, Sarthak Pawar, Hemprasad Yashwant Badgujar, Vaibhav Rathore, Siddharth Sureka, Neha Bhargava"
     summary: "Develops a unified long- and short-term memory architecture for accurate, token-efficient retrieval in enterprise conversational systems."
+    links:
+      - label: "arXiv preprint"
+        url: "https://arxiv.org/pdf/2611.02612"
 
   - title: "Zero-Shot or Fine-Tuned? Benchmarking Time-Series Foundation Models Across Indian and US Equity Markets"
     authors: "Ritik, Vaibhav Rathore, Nachiketa Ratnakar Patil, Siddhant Gole, Siddharth Sureka, Neha Bhargava"

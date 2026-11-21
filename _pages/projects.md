@@ -28,7 +28,7 @@ description: "How can learning systems recognize what they know, discover what t
 <section id="ongoing" aria-labelledby="ongoing-title">
   <div class="section-heading"><h2 id="ongoing-title">Ongoing research</h2></div>
   <p class="section-intro">Current questions and collaborations. Submission venues, review details, and private manuscript links are intentionally omitted.</p>
-  {% for work in site.data.research.ongoing %}<article class="publication ongoing-work"><h3>{{ work.title | escape }}</h3><p class="authors">{{ work.authors | escape | replace: 'Vaibhav Rathore', '<strong>Vaibhav Rathore</strong>' }}</p><p>{{ work.summary | escape }}</p></article>{% endfor %}
+  {% for work in site.data.research.ongoing %}<article class="publication ongoing-work"{% if work.id %} id="{{ work.id }}"{% endif %}><h3>{{ work.title | escape }}</h3><p class="authors">{{ work.authors | escape | replace: 'Vaibhav Rathore', '<strong>Vaibhav Rathore</strong>' }}</p><p>{{ work.summary | escape }}</p>{% if work.links.size > 0 %}<div class="text-links publication-links">{% for link in work.links %}<a href="{{ link.url }}">{{ link.label }}</a>{% endfor %}</div>{% endif %}</article>{% endfor %}
 </section>
 <details class="earlier-work"><summary>Earlier explorations</summary>
   <h3>AI Support Assistant</h3><p>A retrieval-augmented support system built around product manuals and a QLoRA-tuned language model.</p>
